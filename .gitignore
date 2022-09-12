@@ -14,5 +14,5 @@
 *.RDataTmp
 *.png
 Infomap
-data/
-figures/
+data/shapefiles/
+data/tracking

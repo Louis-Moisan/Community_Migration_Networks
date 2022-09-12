@@ -1,0 +1,92 @@
+Functional group,Species,"Non-breeding 
+strategy",Range selected,Selection criteria
+Mosses,"Polytrichum spp.,
+Meesia triquetra",Resident,-,-
+Forbs,"Luzula spp.,
+Saxifraga spp.,
+Oxytropis maydelliana,
+Polygonum viviparum",Resident,-,-
+Shrubs,"Salix spp.,
+Cassiope tetragona,
+Dryas integrifolia,
+Vaccinium uliginosum",Resident,-,-
+Sedges and Grasses,"Eriophorum scheuchzeri,
+ Carex aquatilis,
+Dupontia fisheri",Resident,-,-
+Arthropods,"Chironomidae,
+Muscidae,
+Aranea,
+Lepidoptera,
+Ichneumonidae,
+Carabidae",Resident,-,-
+Arthropods,-,Resident,-,-
+Lemmings,"Collared Lemming
+(Dicrostonyx groenlandicus)",Resident,-,-
+Lemmings,"Brown Lemming
+(Lemmus trimucronatus)",Resident,-,-
+Hares,"Arctic Hare
+(Lepus arcticus)",Resident,-,-
+Ptarmigans,"Rock ptarmigan
+(Lagopus muta)",Resident,-,-
+Geese and Swans,"Snow Goose
+(Anser caerulescens)",Migrant,Tracking,"Legagneux et al., unpublished data"
+Geese and Swans,"Cackling Goose
+(Branta hutchinsii)",Migrant,eBird-Birdlife,Visual inspection of the overlap with the Ebird relative abundance map
+Geese and Swans,"Tundra Swan
+(Cygnus columbianus)",Migrant,Birdlife,Visual inspection of the overlap with the Ebird relative abundance map
+Passerines,"Lapland Longspur
+(Calcarius lapponicus)",Migrant,eBird-Birdlife,Visual inspection of the overlap with the Ebird relative abundance map
+Passerines,"Horned Lark
+(Eremophila alpestris)",Migrant,eBird,Visual inspection of the overlap with the Ebird relative abundance map
+Passerines,"Snow Bunting
+(Plectrophenax nivalis)",Migrant,eBird-Birdlife,Visual inspection of the overlap with the Ebird relative abundance map
+Passerines,"American Pipit
+(Anthus rubescens)",Migrant,eBird-Birdlife,Visual inspection of the overlap with the Ebird relative abundance map
+Shorebirds,"American Golden-Plover
+(Pluvialis dominica)",Migrant,Tracking,"Lamarre, J. F., Gauthier, G., Lanctot, R. B., Saalfeld, S. T., Love, O. P., Reed, E., et al., (2021). Timing of Breeding Site Availability Across the North American Arctic Partly Determines Spring Migration Schedule in a Long-Distance Neotropical Migrant. Front. Ecol. Evol. 9, 710007. https://doi.org/10.3389/fevo.2021.710007"
+Shorebirds,"Black-bellied Plover
+(Pluvialis squatarola)",Migrant,eBird,Ebird range falls inside the boundary of the Birdlife range
+Shorebirds,"Common-ringed Plover
+(Charadrius hiaticula)",Migrant,Tracking,"L‚andri-Breton, D.-J., Lamarre, J.-F., and Bˆty, J. (2019). Seasonal variation in migration strategies used to cross ecological barriers in a nearctic migrant wintering in Africa. J. Avian Biol. 50, e02101. https://doi.org/10.1111/jav.02101 "
+Shorebirds,"Ruddy Turnstone
+(Arenaria interpres)",Migrant,Birdlife,Birdlife range encompass palearctic distribution
+Shorebirds,"Red Phalarope
+(Phalaropus fulicarius)",Migrant,Birdlife,Species found mostly in marine habitats during non-breeding
+Shorebirds,"Red Knot
+(Calidris canutus)",Migrant,Birdlife,Birdlife range encompass palearctic distribution
+Shorebirds,"White-rumped Sandpiper
+(Calidris fuscicollis)",Migrant,eBird,Visual inspection of the overlap with the Ebird relative abundance map
+Shorebirds,"Buff-breasted Sandpiper
+(Calidris subruficollis)",Migrant,eBird,Visual inspection of the overlap with the Ebird relative abundance map
+Shorebirds,"Bairds Sandpiper
+(Calidris bairdii)",Migrant,eBird,Ebird range falls inside the boundary of the Birdlife range
+Shorebirds,"Pectoral Sandpiper
+(Calidris melanotos)",Migrant,eBird,Ebird range falls inside the boundary of the Birdlife range
+Ducks and Loons,"King Eider
+(Somateria spectabilis)",Migrant,Birdlife,Species found mostly in marine habitats during non-breeding
+Ducks and Loons,"Long-tailed Duck
+(Clangula hyemalis)",Migrant,Birdlife,Species found mostly in marine habitats during non-breeding
+Ducks and Loons,"Pacific Loon
+(Gavia pacifica)",Migrant,Birdlife,Species found mostly in marine habitats during non-breeding
+Ducks and Loons,"Red-throated Loon
+(Gavia stellata)",Migrant,Birdlife,Species found mostly in marine habitats during non-breeding
+Ermines,"Ermine
+(Mustela erminea)",Resident,-,-
+Cranes,"Sandhill Crane
+(Antigone canadensis)",Migrant,eBird-Birdlife,Visual inspection of the overlap with the Ebird relative abundance map
+Jaegers,"Long-tailed Jaeger
+(Stercorarius longicaudus)",Migrant,Tracking,"Seyer, Y., Gauthier, G., Bˆty, J., Therrien, J.-F., and Lecomte, N. (2021). Seasonal variations in migration strategy of a long-distance Arctic-breeding seabird. Mar. Ecol. Prog. Ser. 677, 1-16. https://doi.org/10.3354/meps13905 "
+Jaegers,"Parasitic Jaeger
+(Stercorarius parasiticus)",Migrant,Birdlife,Species found mostly in marine habitats during non-breeding
+Gulls,"Glaucous Gull
+(Larus hyperboreus)",Migrant,Birdlife,eBird occurence model lack northern observations
+Ravens,"Common Raven
+(Corvus corax)",Partial migrant,100 km buffer,"Approximate distance from the nearest landfill: Temple, S. A. (1974). Winter food habits of ravens on the Arctic Slope of Alaska. Arctic 27 41-46. https://doi.org/10.14430/arctic2851 "
+Raptors,"Peregrine Falcon
+(Falco peregrinus)",Migrant,eBird,Visual inspection of the overlap with the Ebird relative abundance map
+Raptors,"Rough-legged Hawk
+(Buteo lagopus)",Migrant,eBird,Visual inspection of the overlap with the Ebird relative abundance map
+Raptors,"Snowy Owl
+(Bubo scandiacus)",Migrant,Tracking and eBird,"Robillard, A., Gauthier, G., Therrien, J.-F., and Bˆty, J. (2018). Wintering space use and site fidelity in a nomadic species, the snowy owl. J. Avian Biol. 49, jav-01707. https://doi.org/10.1111/jav.01707 "
+Foxes,"Arctic Fox
+(Vulpes lagopus)",Partial migrant,500 km buffer,"Lai, S., Bˆty, J., and Berteaux, D. (2017). Movement tactics of a mobile predator in a meta-ecosystem with fluctuating resources: the arctic fox in the High Arctic. Oikos 126, 937-947. https://doi.org/10.1111/oik.03948 "

@@ -1,0 +1,41 @@
+func_group,species,func_group_col,non_breeding_strategy,trophic_level,sub_order,vertebrate
+Mosses,Mosses,#abb3bdff,Resident,0,1,N
+Forbs,Forbs,#abb3bdff,Resident,0,2,N
+Shrubs,Shrubs,#abb3bdff,Resident,0,3,N
+Sedges and Grasses,Sedges and Grasses,#abb3bdff,Resident,0,4,N
+Arthropods,Terrestrial Arthropods,#abb3bdff,Resident,1,1,N
+Lemmings,Brown Lemming,#abb3bdff,Resident,1,2,Y
+Lemmings,Collared Lemming,#abb3bdff,Resident,1,3,Y
+Hares,Arctic Hare,#abb3bdff,Resident,1,3,Y
+Ptarmigans,Rock Ptarmigan,#abb3bdff,Resident,1,4,Y
+Geese and Swans,Cackling Goose,#678448,Migrant,1,5,Y
+Geese and Swans,Snow Goose,#678448,Migrant,1,6,Y
+Geese and Swans,Tundra Swan,#678448,Migrant,1,7,Y
+Passerines,American Pipit,#FED748,Migrant,2,1,Y
+Passerines,Horned Lark,#FED748,Migrant,2,2,Y
+Passerines,Lapland Longspur,#FED748,Migrant,2,3,Y
+Passerines,Snow Bunting,#FED748,Migrant,2,4,Y
+Shorebirds,American Golden-Plover,#FB8537,Migrant,2,5,Y
+Shorebirds,Black-bellied Plover,#FB8537,Migrant,2,6,Y
+Shorebirds,Common-ringed Plover,#FB8537,Migrant,2,7,Y
+Shorebirds,Ruddy Turnstone,#FB8537,Migrant,2,8,Y
+Shorebirds,Red Phalarope,#FB8537,Migrant,2,9,Y
+Shorebirds,Red Knot,#FB8537,Migrant,2,10,Y
+Shorebirds,White-rumped Sandpiper,#FB8537,Migrant,2,11,Y
+Shorebirds,Buff-breasted Sandpiper,#FB8537,Migrant,2,12,Y
+Shorebirds,Bairds Sandpiper,#FB8537,Migrant,2,13,Y
+Shorebirds,Pectoral Sandpiper,#FB8537,Migrant,2,14,Y
+Ducks and Loons,King Eider,#5d7fb1,Migrant,2,15,Y
+Ducks and Loons,Long-tailed Duck,#5d7fb1,Migrant,2,16,Y
+Ducks and Loons,Pacific Loon,#5d7fb1,Migrant,2,17,Y
+Ducks and Loons,Red-throated Loon,#5d7fb1,Migrant,2,18,Y
+Ermines,Ermine,#abb3bdff,Resident,3,1,Y
+Cranes,Sandhill Crane,#230606,Migrant,3,2,Y
+Jaegers,Long-tailed Jaeger,#0b1f2a,Migrant,3,3,Y
+Jaegers,Parasitic Jaeger,#0b1f2a,Migrant,3,4,Y
+Gulls,Glaucous Gull,#F5B0CB,Migrant,3,5,Y
+Ravens,Common Raven,#495057ff,Partial migrant,3,6,Y
+Raptors,Rough-legged Hawk,#7A0600,Migrant,3,7,Y
+Raptors,Peregrine Falcon,#7A0600,Migrant,3,8,Y
+Raptors,Snowy Owl,#7A0600,Migrant,3,9,Y
+Foxes,Arctic Fox,#495057ff,Partial migrant,3,10,Y

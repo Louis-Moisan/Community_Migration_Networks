@@ -1,0 +1,334 @@
+species,ecoregion,data,filter
+American Golden-Plover,49,ebird,raw
+American Pipit,104,ebird,raw
+Bairds Sandpiper,55,ebird,raw
+Black-bellied Plover,190,ebird,raw
+Buff-breasted Sandpiper,12,ebird,raw
+Cackling Goose,73,ebird,raw
+Glaucous Gull,76,ebird,raw
+Horned Lark,117,ebird,raw
+King Eider,27,ebird,raw
+Lapland Longspur,75,ebird,raw
+Long-tailed Duck,88,ebird,raw
+Pacific Loon,56,ebird,raw
+Parasitic Jaeger,23,ebird,raw
+Pectoral Sandpiper,52,ebird,raw
+Peregrine Falcon,295,ebird,raw
+Red Knot,68,ebird,raw
+Red-throated Loon,74,ebird,raw
+Rough-legged Hawk,89,ebird,raw
+Ruddy Turnstone,197,ebird,raw
+Sandhill Crane,70,ebird,raw
+Snow Bunting,89,ebird,raw
+Snow Goose,89,ebird,raw
+Snowy Owl,82,ebird,raw
+Tundra Swan,68,ebird,raw
+White-rumped Sandpiper,37,ebird,raw
+American Golden-Plover,41,ebird,habitat
+American Pipit,94,ebird,habitat
+Bairds Sandpiper,33,ebird,habitat
+Black-bellied Plover,47,ebird,habitat
+Buff-breasted Sandpiper,10,ebird,habitat
+Cackling Goose,67,ebird,habitat
+Glaucous Gull,76,ebird,habitat
+Horned Lark,105,ebird,habitat
+King Eider,11,ebird,habitat
+Lapland Longspur,61,ebird,habitat
+Long-tailed Duck,88,ebird,habitat
+Pacific Loon,10,ebird,habitat
+Parasitic Jaeger,14,ebird,habitat
+Pectoral Sandpiper,34,ebird,habitat
+Peregrine Falcon,257,ebird,habitat
+Red Knot,24,ebird,habitat
+Red-throated Loon,74,ebird,habitat
+Rough-legged Hawk,82,ebird,habitat
+Ruddy Turnstone,49,ebird,habitat
+Sandhill Crane,65,ebird,habitat
+Snow Bunting,78,ebird,habitat
+Snow Goose,82,ebird,habitat
+Snowy Owl,82,ebird,habitat
+Tundra Swan,64,ebird,habitat
+White-rumped Sandpiper,28,ebird,habitat
+American Golden-Plover,41,ebird,flyway
+American Pipit,82,ebird,flyway
+Bairds Sandpiper,53,ebird,flyway
+Black-bellied Plover,94,ebird,flyway
+Buff-breasted Sandpiper,12,ebird,flyway
+Cackling Goose,50,ebird,flyway
+Glaucous Gull,42,ebird,flyway
+Horned Lark,104,ebird,flyway
+Lapland Longspur,68,ebird,flyway
+Long-tailed Duck,40,ebird,flyway
+Pacific Loon,41,ebird,flyway
+Parasitic Jaeger,11,ebird,flyway
+Pectoral Sandpiper,52,ebird,flyway
+Peregrine Falcon,295,ebird,flyway
+Red Knot,47,ebird,flyway
+Red-throated Loon,36,ebird,flyway
+Rough-legged Hawk,80,ebird,flyway
+Ruddy Turnstone,104,ebird,flyway
+Sandhill Crane,49,ebird,flyway
+Snow Bunting,83,ebird,flyway
+Snow Goose,28,ebird,flyway
+Snowy Owl,76,ebird,flyway
+Tundra Swan,25,ebird,flyway
+White-rumped Sandpiper,37,ebird,flyway
+American Golden-Plover,36,ebird,flyway and habitat
+American Pipit,75,ebird,flyway and habitat
+Bairds Sandpiper,33,ebird,flyway and habitat
+Black-bellied Plover,22,ebird,flyway and habitat
+Buff-breasted Sandpiper,10,ebird,flyway and habitat
+Cackling Goose,47,ebird,flyway and habitat
+Glaucous Gull,42,ebird,flyway and habitat
+Horned Lark,93,ebird,flyway and habitat
+Lapland Longspur,57,ebird,flyway and habitat
+Long-tailed Duck,40,ebird,flyway and habitat
+Pacific Loon,8,ebird,flyway and habitat
+Parasitic Jaeger,7,ebird,flyway and habitat
+Pectoral Sandpiper,34,ebird,flyway and habitat
+Peregrine Falcon,257,ebird,flyway and habitat
+Red Knot,17,ebird,flyway and habitat
+Red-throated Loon,36,ebird,flyway and habitat
+Rough-legged Hawk,75,ebird,flyway and habitat
+Ruddy Turnstone,24,ebird,flyway and habitat
+Sandhill Crane,45,ebird,flyway and habitat
+Snow Bunting,73,ebird,flyway and habitat
+Snow Goose,27,ebird,flyway and habitat
+Snowy Owl,76,ebird,flyway and habitat
+Tundra Swan,23,ebird,flyway and habitat
+White-rumped Sandpiper,28,ebird,flyway and habitat
+American Golden-Plover,14,ebird,tracking
+Snow Goose,7,ebird,tracking
+Snowy Owl,23,ebird,tracking
+American Golden-Plover,19,birdlife,raw
+American Pipit,186,birdlife,raw
+Bairds Sandpiper,54,birdlife,raw
+Black-bellied Plover,620,birdlife,raw
+Buff-breasted Sandpiper,19,birdlife,raw
+Cackling Goose,62,birdlife,raw
+Common-ringed Plover,243,birdlife,raw
+Glaucous Gull,152,birdlife,raw
+Horned Lark,86,birdlife,raw
+King Eider,73,birdlife,raw
+Lapland Longspur,153,birdlife,raw
+Long-tailed Duck,118,birdlife,raw
+Long-tailed Jaeger,13,birdlife,raw
+Pacific Loon,63,birdlife,raw
+Parasitic Jaeger,179,birdlife,raw
+Pectoral Sandpiper,94,birdlife,raw
+Peregrine Falcon,591,birdlife,raw
+Red Knot,351,birdlife,raw
+Red Phalarope,63,birdlife,raw
+Red-throated Loon,149,birdlife,raw
+Rough-legged Hawk,224,birdlife,raw
+Ruddy Turnstone,684,birdlife,raw
+Sandhill Crane,34,birdlife,raw
+Snow Bunting,190,birdlife,raw
+Snow Goose,75,birdlife,raw
+Snowy Owl,167,birdlife,raw
+Tundra Swan,128,birdlife,raw
+White-rumped Sandpiper,27,birdlife,raw
+American Golden-Plover,17,birdlife,habitat
+American Pipit,163,birdlife,habitat
+Bairds Sandpiper,39,birdlife,habitat
+Black-bellied Plover,148,birdlife,habitat
+Buff-breasted Sandpiper,17,birdlife,habitat
+Cackling Goose,50,birdlife,habitat
+Common-ringed Plover,220,birdlife,habitat
+Glaucous Gull,152,birdlife,habitat
+Horned Lark,74,birdlife,habitat
+King Eider,41,birdlife,habitat
+Lapland Longspur,124,birdlife,habitat
+Long-tailed Duck,118,birdlife,habitat
+Long-tailed Jaeger,11,birdlife,habitat
+Pacific Loon,16,birdlife,habitat
+Parasitic Jaeger,105,birdlife,habitat
+Pectoral Sandpiper,60,birdlife,habitat
+Peregrine Falcon,526,birdlife,habitat
+Red Knot,95,birdlife,habitat
+Red Phalarope,35,birdlife,habitat
+Red-throated Loon,149,birdlife,habitat
+Rough-legged Hawk,202,birdlife,habitat
+Ruddy Turnstone,174,birdlife,habitat
+Sandhill Crane,31,birdlife,habitat
+Snow Bunting,170,birdlife,habitat
+Snow Goose,68,birdlife,habitat
+Snowy Owl,167,birdlife,habitat
+Tundra Swan,107,birdlife,habitat
+White-rumped Sandpiper,21,birdlife,habitat
+American Golden-Plover,19,birdlife,flyway
+American Pipit,95,birdlife,flyway
+Bairds Sandpiper,54,birdlife,flyway
+Black-bellied Plover,90,birdlife,flyway
+Buff-breasted Sandpiper,19,birdlife,flyway
+Cackling Goose,37,birdlife,flyway
+Common-ringed Plover,75,birdlife,flyway
+Glaucous Gull,43,birdlife,flyway
+Horned Lark,44,birdlife,flyway
+King Eider,23,birdlife,flyway
+Lapland Longspur,62,birdlife,flyway
+Long-tailed Duck,37,birdlife,flyway
+Long-tailed Jaeger,8,birdlife,flyway
+Pacific Loon,34,birdlife,flyway
+Parasitic Jaeger,57,birdlife,flyway
+Pectoral Sandpiper,48,birdlife,flyway
+Peregrine Falcon,226,birdlife,flyway
+Red Knot,132,birdlife,flyway
+Red Phalarope,12,birdlife,flyway
+Red-throated Loon,22,birdlife,flyway
+Rough-legged Hawk,83,birdlife,flyway
+Ruddy Turnstone,176,birdlife,flyway
+Sandhill Crane,27,birdlife,flyway
+Snow Bunting,90,birdlife,flyway
+Snow Goose,19,birdlife,flyway
+Snowy Owl,75,birdlife,flyway
+Tundra Swan,12,birdlife,flyway
+White-rumped Sandpiper,27,birdlife,flyway
+American Golden-Plover,17,birdlife,flyway and habitat
+American Pipit,84,birdlife,flyway and habitat
+Bairds Sandpiper,39,birdlife,flyway and habitat
+Black-bellied Plover,20,birdlife,flyway and habitat
+Buff-breasted Sandpiper,17,birdlife,flyway and habitat
+Cackling Goose,32,birdlife,flyway and habitat
+Common-ringed Plover,69,birdlife,flyway and habitat
+Glaucous Gull,43,birdlife,flyway and habitat
+Horned Lark,36,birdlife,flyway and habitat
+King Eider,16,birdlife,flyway and habitat
+Lapland Longspur,50,birdlife,flyway and habitat
+Long-tailed Duck,37,birdlife,flyway and habitat
+Long-tailed Jaeger,6,birdlife,flyway and habitat
+Pacific Loon,8,birdlife,flyway and habitat
+Parasitic Jaeger,34,birdlife,flyway and habitat
+Pectoral Sandpiper,34,birdlife,flyway and habitat
+Peregrine Falcon,197,birdlife,flyway and habitat
+Red Knot,36,birdlife,flyway and habitat
+Red Phalarope,10,birdlife,flyway and habitat
+Red-throated Loon,22,birdlife,flyway and habitat
+Rough-legged Hawk,76,birdlife,flyway and habitat
+Ruddy Turnstone,45,birdlife,flyway and habitat
+Sandhill Crane,24,birdlife,flyway and habitat
+Snow Bunting,81,birdlife,flyway and habitat
+Snow Goose,16,birdlife,flyway and habitat
+Snowy Owl,75,birdlife,flyway and habitat
+Tundra Swan,10,birdlife,flyway and habitat
+White-rumped Sandpiper,21,birdlife,flyway and habitat
+American Golden-Plover,13,birdlife,tracking
+Common-ringed Plover,13,birdlife,tracking
+Long-tailed Jaeger,3,birdlife,tracking
+Snow Goose,6,birdlife,tracking
+Snowy Owl,19,birdlife,tracking
+American Golden-Plover,16,ebird_birdlife,raw
+American Pipit,82,ebird_birdlife,raw
+Bairds Sandpiper,32,ebird_birdlife,raw
+Black-bellied Plover,148,ebird_birdlife,raw
+Buff-breasted Sandpiper,10,ebird_birdlife,raw
+Cackling Goose,22,ebird_birdlife,raw
+Glaucous Gull,44,ebird_birdlife,raw
+Horned Lark,35,ebird_birdlife,raw
+King Eider,15,ebird_birdlife,raw
+Lapland Longspur,53,ebird_birdlife,raw
+Long-tailed Duck,40,ebird_birdlife,raw
+Pacific Loon,33,ebird_birdlife,raw
+Parasitic Jaeger,5,ebird_birdlife,raw
+Pectoral Sandpiper,39,ebird_birdlife,raw
+Peregrine Falcon,178,ebird_birdlife,raw
+Red Knot,46,ebird_birdlife,raw
+Red-throated Loon,37,ebird_birdlife,raw
+Rough-legged Hawk,79,ebird_birdlife,raw
+Ruddy Turnstone,145,ebird_birdlife,raw
+Sandhill Crane,26,ebird_birdlife,raw
+Snow Bunting,80,ebird_birdlife,raw
+Snow Goose,46,ebird_birdlife,raw
+Snowy Owl,44,ebird_birdlife,raw
+Tundra Swan,31,ebird_birdlife,raw
+White-rumped Sandpiper,24,ebird_birdlife,raw
+American Golden-Plover,16,ebird_birdlife,habitat
+American Pipit,74,ebird_birdlife,habitat
+Bairds Sandpiper,23,ebird_birdlife,habitat
+Black-bellied Plover,40,ebird_birdlife,habitat
+Buff-breasted Sandpiper,10,ebird_birdlife,habitat
+Cackling Goose,21,ebird_birdlife,habitat
+Glaucous Gull,44,ebird_birdlife,habitat
+Horned Lark,34,ebird_birdlife,habitat
+King Eider,9,ebird_birdlife,habitat
+Lapland Longspur,46,ebird_birdlife,habitat
+Long-tailed Duck,40,ebird_birdlife,habitat
+Pacific Loon,8,ebird_birdlife,habitat
+Parasitic Jaeger,4,ebird_birdlife,habitat
+Pectoral Sandpiper,32,ebird_birdlife,habitat
+Peregrine Falcon,169,ebird_birdlife,habitat
+Red Knot,17,ebird_birdlife,habitat
+Red-throated Loon,37,ebird_birdlife,habitat
+Rough-legged Hawk,76,ebird_birdlife,habitat
+Ruddy Turnstone,44,ebird_birdlife,habitat
+Sandhill Crane,25,ebird_birdlife,habitat
+Snow Bunting,73,ebird_birdlife,habitat
+Snow Goose,44,ebird_birdlife,habitat
+Snowy Owl,44,ebird_birdlife,habitat
+Tundra Swan,30,ebird_birdlife,habitat
+White-rumped Sandpiper,20,ebird_birdlife,habitat
+American Golden-Plover,16,ebird_birdlife,flyway
+American Pipit,59,ebird_birdlife,flyway
+Bairds Sandpiper,32,ebird_birdlife,flyway
+Black-bellied Plover,69,ebird_birdlife,flyway
+Buff-breasted Sandpiper,10,ebird_birdlife,flyway
+Cackling Goose,16,ebird_birdlife,flyway
+Glaucous Gull,28,ebird_birdlife,flyway
+Horned Lark,33,ebird_birdlife,flyway
+Lapland Longspur,52,ebird_birdlife,flyway
+Long-tailed Duck,25,ebird_birdlife,flyway
+Pacific Loon,33,ebird_birdlife,flyway
+Pectoral Sandpiper,39,ebird_birdlife,flyway
+Peregrine Falcon,178,ebird_birdlife,flyway
+Red Knot,36,ebird_birdlife,flyway
+Red-throated Loon,15,ebird_birdlife,flyway
+Rough-legged Hawk,71,ebird_birdlife,flyway
+Ruddy Turnstone,73,ebird_birdlife,flyway
+Sandhill Crane,23,ebird_birdlife,flyway
+Snow Bunting,75,ebird_birdlife,flyway
+Snow Goose,15,ebird_birdlife,flyway
+Snowy Owl,44,ebird_birdlife,flyway
+Tundra Swan,11,ebird_birdlife,flyway
+White-rumped Sandpiper,24,ebird_birdlife,flyway
+American Golden-Plover,16,ebird_birdlife,flyway and habitat
+American Pipit,53,ebird_birdlife,flyway and habitat
+Bairds Sandpiper,23,ebird_birdlife,flyway and habitat
+Black-bellied Plover,17,ebird_birdlife,flyway and habitat
+Buff-breasted Sandpiper,10,ebird_birdlife,flyway and habitat
+Cackling Goose,16,ebird_birdlife,flyway and habitat
+Glaucous Gull,28,ebird_birdlife,flyway and habitat
+Horned Lark,32,ebird_birdlife,flyway and habitat
+Lapland Longspur,45,ebird_birdlife,flyway and habitat
+Long-tailed Duck,25,ebird_birdlife,flyway and habitat
+Pacific Loon,8,ebird_birdlife,flyway and habitat
+Pectoral Sandpiper,32,ebird_birdlife,flyway and habitat
+Peregrine Falcon,169,ebird_birdlife,flyway and habitat
+Red Knot,14,ebird_birdlife,flyway and habitat
+Red-throated Loon,15,ebird_birdlife,flyway and habitat
+Rough-legged Hawk,69,ebird_birdlife,flyway and habitat
+Ruddy Turnstone,21,ebird_birdlife,flyway and habitat
+Sandhill Crane,22,ebird_birdlife,flyway and habitat
+Snow Bunting,69,ebird_birdlife,flyway and habitat
+Snow Goose,14,ebird_birdlife,flyway and habitat
+Snowy Owl,44,ebird_birdlife,flyway and habitat
+Tundra Swan,10,ebird_birdlife,flyway and habitat
+White-rumped Sandpiper,20,ebird_birdlife,flyway and habitat
+American Golden-Plover,12,ebird_birdlife,tracking
+Snow Goose,6,ebird_birdlife,tracking
+Snowy Owl,11,ebird_birdlife,tracking
+American Golden-Plover,15,tracking,raw
+Common-ringed Plover,15,tracking,raw
+Long-tailed Jaeger,38,tracking,raw
+Snowy Owl,36,tracking,raw
+American Golden-Plover,15,tracking,habitat
+Common-ringed Plover,15,tracking,habitat
+Long-tailed Jaeger,20,tracking,habitat
+Snowy Owl,36,tracking,habitat
+American Golden-Plover,15,tracking,flyway
+Common-ringed Plover,15,tracking,flyway
+Long-tailed Jaeger,37,tracking,flyway
+Snowy Owl,36,tracking,flyway
+American Golden-Plover,15,tracking,flyway and habitat
+Common-ringed Plover,15,tracking,flyway and habitat
+Long-tailed Jaeger,19,tracking,flyway and habitat
+Snowy Owl,36,tracking,flyway and habitat

@@ -1,0 +1,64 @@
+Species,Habitat type,Justification,Reference
+Arctic Fox,"Terrestrial
+Marine
+Coastal",Loop migration of several hundreads of kilometres in adjacent habitats,"Lai, S., Bˆty, J., and Berteaux, D. (2017). Movement tactics of a mobile predator in a meta-ecosystem with fluctuating resources: the arctic fox in the High Arctic. Oikos 126, 937-947. https://doi.org/10.1111/oik.03948 "
+Rock Ptarmigan,Terrestrial,"""Shrubby areas and margins of lakes and rivers""","Montgomerie, R., and Holder, K. (2020). ""Rock Ptarmigan (Lagopus muta), version 1.0"", in Birds of the World, ed. Billerman, S. M., Keeney, B. K., Rodewald, P. G., and Schulenberg, T. S. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.rocpta1.01"
+Cackling Goose,"Terrestrial
+Coastal","""Coastal areas, mudflats, shallow tidal waters, salt-water marshes, wet grasslands, freshwater marshes, lakes, reservoirs, rivers  and agricultural fields""","Mowbray, T. B., Ely, C. R., Sedinger, J. S., and Trost, R. E. (2020). ""Cackling Goose (Branta hutchinsii), version 1.0"", in Birds of the World, ed. Rodewald, P G., and Keeney, B. K. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.cacgoo1.01"
+Snow Goose,"Terrestrial
+Coastal","""Coastal areas, estuarine marshes, inlets, bays, shallow tidal waters, coastal freshwater, brackish marshes, wet grasslands, freshwater marshes, coastal prairies and cultivated fields""","Mowbray, T. B., Cooke, F., and Ganter, B. (2020). ""Snow Goose (Anser caerulescens), version 1.0"", in Birds of the World, ed. Rodewald, P. G. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.snogoo.01"
+Tundra Swan,"Terrestrial
+Coastal","""Shallow estuarine tidal areas, freshwater lakes, ponds, rivers, agricultural fields and flooded pastures"" ","Limpert, R. J., Earnst, S. L., Carboneras, C., and Kirwan, G. M. (2020). ""Tundra Swan (Cygnus columbianus), version 1.0"", in Birds of the World, ed. Billerman, S. M. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.tunswa.01"
+King Eider,"Marine
+Coastal","""Southern edge of sea ice, polynyas in sea ice, coastal areas, shallow open waters, offshore waters""","Gerber, B. D., Dwyer, J. F., Nesbitt, S. A., Drewien, R. C., Littlefield, R. C., Tacha, T. C., and Vohs, P. A. (2020). ""Sandhill Crane (Antigone canadensis), version 1.0"", in Birds of the World, ed. Poole, A. F. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.sancra.01"
+Long-tailed Duck,"Terrestrial
+Marine
+Coastal","""Coastal marine waters, large freshwater lakes, with extensive sea ice, will use recurring polynyas and floe edges""","Robertson, G. J., and Savard, J.-P. L. (2020). ""Long-tailed Duck (Clangula hyemalis), version 1.0"", in Birds of the World, ed. Billerman, S. M. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.lotduc.01"
+Pacific Loon,Marine,"""Coastal water; nearshore open ocean, bays and estuaries""","Russell, R. W. (2020). ""Pacific Loon (Gavia pacifica), version 1.0"", in Birds of the World, ed. Rodewald, P G. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.pacloo.01"
+Red-throated Loon,"
+Terrestrial
+Marine
+Coastal","""Coastal upwellig, coastal estuaries, occasionally on large freshwater lakes and slow-moving rivers""","Rizzolo, D. J., Gray, C. E., Schmutz, J. A., Barr, J. F., Eberl, C., and McIntyre, J. W. (2020). ""Red-throated Loon (Gavia stellata), version 2.0"", in Birds of the World, ed. Rodewald, P. G., and Keeney, B. K. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.retloo.02"
+Snowy Owl,"
+Terrestrial
+Marine
+Coastal","""Snow-covered tundra, open water within the ice pack, rangelands, farmlands, coast lines, marshes, large forest clearings and cities and towns""","Holt, D. W., Larson, M. D., Smith, N., Evans, D. L., and Parmelee, D. F. (2020). ""Snowy Owl (Bubo scandiacus), version 1.0"", in Birds of the World, ed. Billerman, S. M. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.snoowl1.01"
+Rough-legged Hawk,"Terrestrial
+Coastal","""Prairies, shrub-steppes, semideserts, open fields, marshlands, bogs, dunes and coastal areas""","Bechard, M. J., Swem, T. R., Orta, J., Boesman, P. F. D., Garcia, E. F. J., and Marks, J. S. (2020). ""Rough-legged Hawk (Buteo lagopus), version 1.0"", in Birds of the World, ed. Billerman, S. M. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.rolhaw.01"
+Peregrine Falcon,"Terrestrial
+Coastal","""Extreme habitat variability:  Open-relief,  mangrove, coastal or wetland areas, major river valleys, lake shores, pasture lands and urban areas""","White, C. M., Clum, N. J., Cade, T. J., and Hunt, W. G. (2020). ""Peregrine Falcon (Falco peregrinus), version 1.0"", in Birds of the World, ed. Billerman, S. M. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.perfal.01"
+Parasitic Jaeger,"Marine
+Coastal","""Near shore to beyond the edge of the continental shelf and in estuaries""","Wiley, R. H., and Lee, D. S. (2020). ""Parasitic Jaeger (Stercorarius parasiticus), version 1.0"", in Birds of the World, ed. Billerman, S. M. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.parjae.01"
+Long-tailed Jaeger,Marine,"""Pelagic""","Wiley, R. H., and Lee, D. S. (2020). ""Long-tailed Jaeger (Stercorarius longicaudus), version 1.0"", in Birds of the World, ed. Billerman, S. M. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.lotjae.01"
+Glaucous Gull,"
+Terrestrial
+Marine
+Coastal","""Maritime coasts, freshwater lakes, agricultural fields, urban areas, garbage dumps, polynyas and open water""","Weiser, E., and Gilchrist, H. G. (2020). ""Glaucous Gull (Larus hyperboreus), version 1.0"", in Birds of the World, ed. Billerman, S. M. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.glagul.01"
+Common Raven,"
+Terrestrial
+Marine
+Coastal","""Extreme habitat generalist: forested and open coastal, steppe, mountain, desert, tundra, Arctic ice floes, mountains and cliff""","Boarman, W. I., and Heinrich, B. (2020). ""Common Raven (Corvus corax), version 1.0"", in Birds of the World, ed. Billerman, S. M. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.comrav.01"
+Sandhill Crane,"Terrestrial
+Coastal","""Shallow open water marshes, estuarine intertidal areas, wetland areas, croplands and pastures""","Gerber, B. D., Dwyer, J. F., Nesbitt, S. A., Drewien, R. C., Littlefield, C. D., Tacha, T. C., and Vohs, P. A. (2020). ""Sandhill Crane (Antigone canadensis), version 1.0"", in Birds of the World, ed. Poole, A. F. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.sancra.01"
+American Pipit,"Terrestrial
+Coastal","""Coastal beaches and marshes, stubble fields, recently-plowed fields, mud flats and river courses""","Hendricks, P., and Verbeek, N. A. (2020). ""American Pipit (Anthus rubescens), version 1.0"", in Birds of the World, ed. Billerman, S. M. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.amepip.01"
+Horned Lark,"Terrestrial
+Coastal","""Open barren country, shortgrass prairies, deserts, brushy flats, alpine habitats, shrubsteppes, sandy beaches, sand dunes, steppes, agricultural areas, areas grazed by livestock""","Beason, R. C. (2020). ""Horned Lark (Eremophila alpestris), version 1.0"", in Birds of the World, ed. Billerman, S. M. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.horlar.01"
+Lapland Longspur,Terrestrial,"""Prairies, open weedy and grassy fields, grain stubbles, shores""","Hussell, D. J. T., and Montgomerie, R. (2020). ""Lapland Longspur (Calcarius lapponicus), version 1.0"", in Birds of the World, ed. Billerman, S. M., Keeney, B. K., Rodewald, P. G., and Schulenberg, T. S. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.laplon.01"
+Snow Bunting,"Terrestrial
+Coastal","""Open weedy and grassy fields, grain stubbles, shores of lakes and rivers, farmyards, shingle beaches, salt marshes, sand dunes, tidelines, coastal lowlands""","Montgomerie, R., and Lyon, B. (2020). ""Snow Bunting (Plectrophenax nivalis), version 1.0"", in Birds of the World, ed. Billerman, S. M., Keeney, B. K., Rodewald, P. G., and Schulenberg, T. S. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.snobun.01"
+American Golden-Plover,"Terrestrial
+Coastal","""Grasslands, coastal wetlands and tidal areas""","Johnson, O. W., Connors, P. G., and Pyle, P. (2021). ""American Golden-Plover (Pluvialis dominica), version 1.1"", in Birds of the World, ed. Rodewald, P. G., Keeney, B. K., and Billerman, S. M. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.amgplo.01.1"
+Black-bellied Plover,Coastal,"""Coastal beaches and estuaries, flooded pastures and agricultural land near sea and bays, salt marshes, mangrove""
+","Poole, A. F., Pyle, P., Patten, M. A., and Paulson, D. R. (2020). ""Black-bellied Plover (Pluvialis squatarola), version 1.0"", in Birds of the World, ed. Billerman, S. M. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.bkbplo.01"
+Common-ringed Plover,"Coastal
+Terrestrial","""Beaches, sandbanks, mudflats, estuaries, rivers, lakes, lagoons, saltmarshes, grassland, flooded fields and artificial habitats (gravel pits, reservoirs, farmland and playing fields)""","Wiersma, P., Kirwan, G. M., and Boesman, P. F. D. (2020). ""Common Ringed Plover (Charadrius hiaticula), version 1.0"", in Birds of the World, ed. del Hoyo, J., Elliott, A., Sargatal, J., Christie, D. A., and de Juana, E. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.corplo.01"
+Ruddy Turnstone,Coastal,"""Almost exclusively coastal, shorelines, mudflats, sandflats and delta""","Nettleship, D. N. (2020). ""Ruddy Turnstone (Arenaria interpres), version 1.0"", in Birds of the World, ed. Billerman, S. M. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.rudtur.01"
+Red Phalarope,Marine,"""Pelagic""","Tracy, D. M., Schamel, D., and Dale, J. (2020). ""Red Phalarope (Phalaropus fulicarius), version 1.0"", in Birds of the World, ed. Billerman, S. M. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.redpha1.01"
+Red Knot,Coastal,"""Sandy beaches, peat banks, salt marshes, brackish lagoons, tidal mudflats, mangroves, sandflats""","Baker, A., Gonzalez, P., Morrison, R. I. G., and Harrington, B. A. (2020). ""Red Knot (Calidris canutus), version 1.0"", in Birds of the World, ed. Billerman, S. M. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.redkno.01"
+White-rumped Sandpiper,"Terrestrial
+Coastal","""Beaches, river banks, open fields, marshes, intertidal areas, saltmarsh/slough, stream and canal, pond/lagoon edge, flooded field""","Parmelee, D. F. (2020). ""White-rumped Sandpiper (Calidris fuscicollis), version 1.0"", in Birds of the World, Poole, A. F., Stettenheim, P. R., and Gill, F. B. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.whrsan.01"
+Buff-breasted Sandpiper,"Terrestrial
+Coastal","""Grasslands in the coastal portions of the R¡o de La Plata Grasslands, the eastern portion of the Flooding Pampa of Argentina, and areas adjacent to lagoon complexes""","McCarty, J. P., Wolfenbarger, L. L., Laredo, C. D., Pyle, P., and Lanctot, R. B. (2020). ""Buff-breasted Sandpiper (Calidris subruficollis), version 1.0"", in Birds of the World, ed. Rodewald, P. G. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.bubsan.01"
+Bairds Sandpiper,Terrestrial,"""Habitats about 2,550-4,500 m elevation, dry areas with short vegetation, strongly grazed shore meadows with muddy, partly dry ponds, short-grass plains and slopes""","Moskoff, W., and Montgomerie, R. (2020). ""Baird's Sandpiper (Calidris bairdii), version 1.0"", in Birds of the World, ed. Poole, A. F., and Gill, F. B. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.baisan.01"
+Pectoral Sandpiper,Terrestrial,"""Grasslands, marshy areas and wetlands, rarely tidal""","Farmer, A., Holmes, R. T., and Pitelka, F. A. (2020). ""Pectoral Sandpiper (Calidris melanotos), version 1.0"", in Birds of the World, ed. Billerman, S. Cornell Lab of Ornithology, Ithaca, NY, USA. https://doi.org/10.2173/bow.pecsan.01"
