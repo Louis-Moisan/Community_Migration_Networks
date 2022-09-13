@@ -15,4 +15,4 @@
 *.png
 Infomap
 data/shapefiles/
-data/tracking
+data/tracking/snow_goose

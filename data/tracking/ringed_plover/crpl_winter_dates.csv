@@ -1,0 +1,27 @@
+Individual,Deployment_year,Winter_arrival,Winter_departure,Comment
+1,2014,2014/23/09,NA,"Arrival dates estimated using longitude only because of extensive polar daylight or equinox period
+"
+2,2014,2014/28/08,NA,
+3,2014,2014/03/09,NA,
+4,2014,2014/05/10,2015/11/04,"Arrival dates estimated using longitude only because of extensive polar daylight or equinox period
+"
+5,2014,2014/26/09,2015/24/04,"Arrival dates estimated using longitude only because of extensive polar daylight or equinox period
+"
+6,2014,2014/08/09,2015/02/05,
+7,2015,NA,2016/31/03,
+8,2015,2015/28/10,2016/24/02,
+9,2015,2015/25/09,2016/11/04,"Arrival dates estimated using longitude only because of extensive polar daylight or equinox period
+"
+10,2015,2015/02/09,2016/16/04,
+11,2015,NA,2016/19/04,
+12,2015,2015/01/09,2016/23/04,
+13,2015,2015/01/09,2016/21/04,
+14a,2015,2015/19/09,2016/06/05,"Arrival dates estimated using longitude only because of extensive polar daylight or equinox period
+"
+14b,2015,2015/17/09,2016/NA,
+15,2016,2016/28/08,2017/11/04,
+16,2016,2016/04/09,2017/08/05,
+17,2016,2016/04/09,2017/02/04,
+18,2016,2016/28/08,2017/15/04,
+19,2016,2016/05/09,2017/15/04,
+20,2016,2016/25/08,2017/18/04,

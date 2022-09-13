@@ -1,0 +1,18 @@
+tag_id,id,Arrival_w1,Departure_w1,Arrival_w2,Departure_w2,Arrival_w3,Departure_w3,Comment
+38596,F1,2007-11-28,2008-04-11,2008-11-15,2009-03-09,2009-10-05,2010-04-01,Arrival_w3 date is really different
+38602,F2,2007-11-07,2008-05-08,NA,NA,NA,NA,
+38610,F3,2007-11-26,2008-03-27,2008-11-14,2009-03-25,2009-11-01,2010-04-08,Arrival_w2 date is really different and Arrival_w3 is slightly different
+39078,F4,2007-10-16,2008-04-13,2008-10-22,2009-03-27,2009-12-15,2010-03-27,Arrival_w2  and Departure_w2 are slightly different
+39097,F5,2007-11-29,2008-03-28,2008-10-20,2009-03-31,2009-11-05,2010-03-24,"Arrival_w2, Departure_w2, Arrival_w3 and Departure_w3 are slightly different"
+39100,F6,2007-12-07,2008-03-24,2008-11-02,2009-03-22,2009-10-09,2010-03-18,Arrival_w2 and Arrival_w3 are really different
+39103,F7,2007-12-07,2008-03-15,NA,NA,NA,NA,
+48837,F8,2007-11-07,2008-03-29,2008-11-08,2009-03-29,2009-12-14,2010-04-10,"Arrival_w1 and Arrival_w2 are really different, Departure_w2 is slightly different"
+148839,F9,2008-01-03,2008-03-16,2008-11-27,2009-03-16,2009-11-21,2010-03-17,"Arrival_w1, Arrival_w2, Departure_w2 and Arrival_w3 are slightly different"
+106398,Kleo_SNOW_14_25,2014-11-30,2015-04-24,NA,NA,NA,NA,Departure_w1 is really different
+106400,Meggie_SNOW_14_02,2014-11-28,2015-05-31,NA,NA,NA,NA,Departure_w1 is slightly different
+106402,Olivia_SNOW_14_11,NA,NA,NA,NA,NA,NA,
+106403,Penny_SNOW_14_30,2014-11-16,2015-04-21,NA,NA,NA,NA,
+106399,Lili_SNOW_14_01,NA,NA,NA,NA,NA,NA,
+106401,Nina_SNOW_14_04,NA,NA,NA,NA,NA,NA,
+134872,Quartz_SNOW_14_46,NA,NA,NA,NA,NA,NA,
+134873,Roxanne_SNOW_14_51,NA,NA,NA,NA,NA,NA,

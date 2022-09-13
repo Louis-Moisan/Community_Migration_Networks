@@ -1,0 +1,37 @@
+tag-id,animal-id,animal-taxon,deploy-on-date,deploy-off-date,animal-life-stage,animal-reproductive-condition,animal-ring-id,animal-sex,deployment-id,manipulation-type,tag-readout-method
+106206,PaulAlbert,Bubo scandiacus,,,,,,m,PaulAlbert_106206_2011,none,satellite
+39097,F5,Bubo scandiacus,2007-06-27 00:00:00.000,2010-08-11 00:00:00.000,,,,m,F5_139097_2007,none,satellite
+39100,F6,Bubo scandiacus,2007-06-29 00:00:00.000,2010-08-24 00:00:00.000,,,,m,F6_139100_2007,none,satellite
+38596,F1,Bubo scandiacus,2007-07-02 00:00:00.000,2011-01-10 00:00:00.000,,,,m,F1_1038596_2007,none,satellite
+38610,F3,Bubo scandiacus,2007-07-05 00:00:00.000,2011-01-17 00:00:00.000,,,,m,F3_138610_2007,none,satellite
+38602,F2,Bubo scandiacus,2007-07-07 00:00:00.000,2009-05-25 00:00:00.000,,,,m,F2_138602_2007,none,satellite
+39078,F4,Bubo scandiacus,2007-07-07 00:00:00.000,2010-06-30 00:00:00.000,,,,m,F4_139078_2007,none,satellite
+39103,F7,Bubo scandiacus,2007-07-10 00:00:00.000,2009-01-06 00:00:00.000,,,,m,F7_139103_2007,none,satellite
+48837,F8,Bubo scandiacus,2007-07-11 00:00:00.000,2010-12-27 00:00:00.000,,,,m,F8_148837_2007,none,satellite
+148839,F9,Bubo scandiacus,2007-07-11 00:00:00.000,2010-10-23 00:00:00.000,,,,m,F9_148839_2007,none,satellite
+48842,SNOW_F4_08,Bubo scandiacus,2008-06-28 00:00:00.000,,adult,breeding,,f,SNOW_F4_08_48842,none,satellite
+38593,SNOW_F1_08,Bubo scandiacus,2008-06-28 00:00:00.000,,adult,breeding,,f,SNOW_F1_08_38593,none,satellite
+38606,SNOW_F2_08,Bubo scandiacus,2008-06-28 00:00:00.000,,adult,breeding,,f,SNOW_F2_08_38606,none,satellite
+38607,SNOW_F3_08,Bubo scandiacus,2008-06-28 00:00:00.000,,adult,breeding,,f,SNOW_F3_08_38607,none,satellite
+106207,Andrea SNOW_13_01,Bubo scandiacus,2013-07-08 00:00:00.000,,,,,f,Andrea SNOW_13_01_106207,none,satellite
+106208,Beatrix SNOW_13_05,Bubo scandiacus,2013-07-08 00:00:00.000,,,,,f,Beatrix SNOW_13_05_106208,none,satellite
+106390,Christie SNOW_13_04,Bubo scandiacus,2013-07-09 00:00:00.000,,,,,f,Christie SNOW_13_04_106390,none,satellite
+106397,Jasmine SNOW_13_11,Bubo scandiacus,2013-07-11 00:00:00.000,,,,,f,Jasmine SNOW_13_11_106397,none,satellite
+106391,Drew SNOW_13_08,Bubo scandiacus,2013-07-12 00:00:00.000,,,,,f,Drew SNOW_13_08_106391,none,satellite
+106392,Elise SNOW_13-10,Bubo scandiacus,2013-07-12 00:00:00.000,,,,,f,Elise SNOW_13-10_106392,none,satellite
+106393,Gigi SNOW_13_06,Bubo scandiacus,2013-07-14 00:00:00.000,,,,,f,Gigi SNOW_13_06_106393,none,satellite
+106395,Fiona SNOW_13_07,Bubo scandiacus,2013-07-14 00:00:00.000,,,,,f,Fiona SNOW_13_07_106395,none,satellite
+106394,Heidi SNOW_13_03,Bubo scandiacus,2013-07-16 00:00:00.000,,,,,f,Heidi SNOW_13_03_106394,none,satellite
+106396,Ivory SNOW_13_02,Bubo scandiacus,2013-07-16 00:00:00.000,,,,,f,Ivory SNOW_13_02_106396,none,satellite
+106398,Kleo_SNOW_14_25,Bubo scandiacus,2014-06-29 00:00:00.000,,,,599-44622,f,Kleo_SNOW_14_25_106398,none,satellite
+106399,Lili_SNOW_14_01,Bubo scandiacus,2014-06-30 00:00:00.000,,,,599-44623,f,Lili_SNOW_14_01_106399,none,satellite
+106400,Meggie_SNOW_14_02,Bubo scandiacus,2014-06-30 00:00:00.000,,,,599-44624,f,Meggie_SNOW_14_02_106400,none,satellite
+106401,Nina_SNOW_14_04,Bubo scandiacus,2014-07-01 00:00:00.000,,,,599-44625,f,Nina_SNOW_14_04_106401,none,satellite
+106402,Olivia_SNOW_14_11,Bubo scandiacus,2014-07-03 00:00:00.000,,,,,f,Olivia_SNOW_14_11_106402,none,satellite
+106403,Penny_SNOW_14_30,Bubo scandiacus,2014-07-03 00:00:00.000,,,,,f,Penny_SNOW_14_30_106403,none,satellite
+134872,Quartz_SNOW_14_46,Bubo scandiacus,2014-07-04 00:00:00.000,,,,599-44628,f,Quartz_SNOW_14_46_134872,none,satellite
+134873,Roxanne_SNOW_14_51,Bubo scandiacus,2014-07-05 00:00:00.000,,,,599-44629,f,Roxanne_SNOW_14_51_134873,none,satellite
+39061,,,,,,,,,,,
+39075,,,,,,,,,,,
+39093,,,,,,,,,,,
+,#164119964,Bubo scandiacus,,,,,,f,,,
