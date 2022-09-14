@@ -217,36 +217,39 @@
 "216","Snow Goose","ebird_birdlife","flyway",15,67.3913043478261
 "217","Snow Goose","ebird_birdlife","flyway and habitat",14,69.5652173913043
 "218","Snow Goose","ebird_birdlife","tracking",6,86.9565217391304
-"219","Snowy Owl","birdlife","habitat",167,0
-"220","Snowy Owl","birdlife","flyway",75,55.0898203592814
-"221","Snowy Owl","birdlife","flyway and habitat",75,55.0898203592814
-"222","Snowy Owl","birdlife","tracking",19,88.622754491018
-"223","Snowy Owl","ebird","habitat",82,0
-"224","Snowy Owl","ebird","flyway",76,7.3170731707317
-"225","Snowy Owl","ebird","flyway and habitat",76,7.3170731707317
-"226","Snowy Owl","ebird","tracking",23,71.9512195121951
-"227","Snowy Owl","ebird_birdlife","habitat",44,0
-"228","Snowy Owl","ebird_birdlife","flyway",44,0
-"229","Snowy Owl","ebird_birdlife","flyway and habitat",44,0
-"230","Snowy Owl","ebird_birdlife","tracking",11,75
-"231","Snowy Owl","tracking","habitat",36,0
-"232","Snowy Owl","tracking","flyway",36,0
-"233","Snowy Owl","tracking","flyway and habitat",36,0
-"234","Tundra Swan","birdlife","habitat",107,16.40625
-"235","Tundra Swan","birdlife","flyway",12,90.625
-"236","Tundra Swan","birdlife","flyway and habitat",10,92.1875
-"237","Tundra Swan","ebird","habitat",64,5.88235294117647
-"238","Tundra Swan","ebird","flyway",25,63.2352941176471
-"239","Tundra Swan","ebird","flyway and habitat",23,66.1764705882353
-"240","Tundra Swan","ebird_birdlife","habitat",30,3.2258064516129
-"241","Tundra Swan","ebird_birdlife","flyway",11,64.5161290322581
-"242","Tundra Swan","ebird_birdlife","flyway and habitat",10,67.741935483871
-"243","White-rumped Sandpiper","birdlife","flyway",27,0
-"244","White-rumped Sandpiper","birdlife","habitat",21,22.2222222222222
-"245","White-rumped Sandpiper","birdlife","flyway and habitat",21,22.2222222222222
-"246","White-rumped Sandpiper","ebird","flyway",37,0
-"247","White-rumped Sandpiper","ebird","habitat",28,24.3243243243243
-"248","White-rumped Sandpiper","ebird","flyway and habitat",28,24.3243243243243
-"249","White-rumped Sandpiper","ebird_birdlife","flyway",24,0
-"250","White-rumped Sandpiper","ebird_birdlife","habitat",20,16.6666666666667
-"251","White-rumped Sandpiper","ebird_birdlife","flyway and habitat",20,16.6666666666667
+"219","Snow Goose","tracking","flyway",7,0
+"220","Snow Goose","tracking","habitat",6,14.2857142857143
+"221","Snow Goose","tracking","flyway and habitat",6,14.2857142857143
+"222","Snowy Owl","birdlife","habitat",167,0
+"223","Snowy Owl","birdlife","flyway",75,55.0898203592814
+"224","Snowy Owl","birdlife","flyway and habitat",75,55.0898203592814
+"225","Snowy Owl","birdlife","tracking",19,88.622754491018
+"226","Snowy Owl","ebird","habitat",82,0
+"227","Snowy Owl","ebird","flyway",76,7.3170731707317
+"228","Snowy Owl","ebird","flyway and habitat",76,7.3170731707317
+"229","Snowy Owl","ebird","tracking",23,71.9512195121951
+"230","Snowy Owl","ebird_birdlife","habitat",44,0
+"231","Snowy Owl","ebird_birdlife","flyway",44,0
+"232","Snowy Owl","ebird_birdlife","flyway and habitat",44,0
+"233","Snowy Owl","ebird_birdlife","tracking",11,75
+"234","Snowy Owl","tracking","habitat",36,0
+"235","Snowy Owl","tracking","flyway",36,0
+"236","Snowy Owl","tracking","flyway and habitat",36,0
+"237","Tundra Swan","birdlife","habitat",107,16.40625
+"238","Tundra Swan","birdlife","flyway",12,90.625
+"239","Tundra Swan","birdlife","flyway and habitat",10,92.1875
+"240","Tundra Swan","ebird","habitat",64,5.88235294117647
+"241","Tundra Swan","ebird","flyway",25,63.2352941176471
+"242","Tundra Swan","ebird","flyway and habitat",23,66.1764705882353
+"243","Tundra Swan","ebird_birdlife","habitat",30,3.2258064516129
+"244","Tundra Swan","ebird_birdlife","flyway",11,64.5161290322581
+"245","Tundra Swan","ebird_birdlife","flyway and habitat",10,67.741935483871
+"246","White-rumped Sandpiper","birdlife","flyway",27,0
+"247","White-rumped Sandpiper","birdlife","habitat",21,22.2222222222222
+"248","White-rumped Sandpiper","birdlife","flyway and habitat",21,22.2222222222222
+"249","White-rumped Sandpiper","ebird","flyway",37,0
+"250","White-rumped Sandpiper","ebird","habitat",28,24.3243243243243
+"251","White-rumped Sandpiper","ebird","flyway and habitat",28,24.3243243243243
+"252","White-rumped Sandpiper","ebird_birdlife","flyway",24,0
+"253","White-rumped Sandpiper","ebird_birdlife","habitat",20,16.6666666666667
+"254","White-rumped Sandpiper","ebird_birdlife","flyway and habitat",20,16.6666666666667

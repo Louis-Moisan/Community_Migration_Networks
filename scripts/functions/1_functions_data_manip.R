@@ -7,9 +7,7 @@
 #------------------#
 library(igraph)
 library(dplyr)
-
-
-
+library(sf)
 #------------------------------------------------#
 #### Extract adjency matrices from shapefiles ####
 #------------------------------------------------#
@@ -23,7 +21,7 @@ extract_adjency_m <- function(shp,
                               output_path){
 
   eco <- sf::st_read(shp)%>%
-    st_drop_geometry() %>% 
+    sf::st_drop_geometry() %>% 
     dplyr::select(species, ecoregion, eco_type, flyway) %>% 
     unique()
   #----- Extract a data frame with all the ecoregions connected to each species
@@ -122,7 +120,8 @@ colnames(data_region)[2] <- scale
 data_region$data <- data
 data_region$filter <- filter
 #Keep only species present in the species list
-data_region <- data_region %>% filter(species %in% sp_list)
+data_region <- data_region %>%
+  dplyr::filter(species %in% sp_list)
 return(data_region)
 }
 

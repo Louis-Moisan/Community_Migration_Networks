@@ -38,10 +38,10 @@ chordDiagram_Network <- function(file_name,
       heigh= (heigh/25.4),
       bg= "transparent")
   
-  circos.clear() 
+  circlize::circos.clear() 
   
   #Plot
-  circos.par(start.degree = start.degree)
+  circlize::circos.par(start.degree = start.degree)
   chordDiagram(adjency_list, #edge list
                grid.col = node_color, #node color
                transparency = transparency,
@@ -57,8 +57,8 @@ chordDiagram_Network <- function(file_name,
                order= order) #node order 
   if (labels == TRUE) {
     #Labels
-    circos.track(track.index = 1, panel.fun = function(x, y) {
-      circos.text(CELL_META$xcenter, CELL_META$ylim[1], CELL_META$sector.index, 
+    circlize::circos.track(track.index = 1, panel.fun = function(x, y) {
+      circlize::circos.text(CELL_META$xcenter, CELL_META$ylim[1], CELL_META$sector.index, 
                   facing = "clockwise",
                   niceFacing = TRUE,
                   cex= label_size,
