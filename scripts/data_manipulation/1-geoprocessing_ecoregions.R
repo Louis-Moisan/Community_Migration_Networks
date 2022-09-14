@@ -24,7 +24,7 @@
 #### Librairies ####
 #------------------#
 library(sf)
-library(tidyverse)
+library(dplyr)
 library(plyr)
 
 #--------------------------------------#

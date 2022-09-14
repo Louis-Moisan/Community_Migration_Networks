@@ -13,6 +13,7 @@
 *.RData
 *.RDataTmp
 *.png
+*.tiff
 Infomap
 data/shapefiles/
 data/tracking/snow_goose

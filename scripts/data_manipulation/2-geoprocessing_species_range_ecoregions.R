@@ -22,7 +22,7 @@
 #### Librairies ####
 #------------------#
 library(sf)
-library(tidyverse)
+library(dplyr)
 library(plyr)
 
 ### Message " although coordinates are longitude/latitude, st_intersection assumes that they are planar"

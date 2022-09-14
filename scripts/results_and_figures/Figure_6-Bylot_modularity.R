@@ -7,6 +7,7 @@
 #------------------#
 #### Librairies 
 library(infomapecology) #Run modularity analysis based on flow
+#devtools::install_github('Ecological-Complexity-Lab/infomap_ecology_package', force=T)
 library(dplyr) #Data manipulation
 library(bipartite) #Network analysis
 library(igraph) #Extract adjency list
