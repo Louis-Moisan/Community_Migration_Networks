@@ -75,8 +75,10 @@ M %<>%
 # Join the module colors to the edge list
 # If there are no interactions outside the module then do not need the gray
 # color. Otherwise, it will plot the first module in gray.
-a <- Set2_modules %>% group_by(module2) %>% summarise(n=n())
-a$colors <- colors[1: nrow(a)]
+a <- Set2_modules %>%
+  dplyr::group_by(module2) %>% 
+  dplyr::summarise(n=n())
+
 
 # Define module colors
 colors <-c("#000000", #ruby-red 
@@ -108,10 +110,23 @@ y.lab.col <-  left_join(data.frame(species= rev(levels(M$Set2))), sp_colors, by=
   select(func_group_col) %>% 
   mutate(func_group_col= as.character(func_group_col))
 
+#---Define bounding boxes for each modules
+# y min and max values for each boxe
+y_coords_boxes <-  Set2_modules %>%
+  dplyr::arrange(desc(module2)) %>% 
+  mutate(y_coords= 1:length(module2)) %>% 
+  group_by(module2) %>% 
+  summarise(min_y= min(y_coords), max_y= max(y_coords))
 
+x_coords_boxes <-  Set1_modules %>% 
+  mutate(x_coords= 1:length(module1)) %>% 
+  group_by(module1) %>% 
+  summarise(min_x= min(x_coords), max_x= max(x_coords))
 
+boxes_coords <- dplyr::left_join(x_coords_boxes, y_coords_boxes, by= c("module1"= "module2")) %>% 
+  dplyr::rename( module= module1)
 #Plot incidence matrix as heat map with species and rows order by modules
-svg("article/figures/Figure_6-Bylot_modularity/Figure6.svg", #file name
+svg("figures/Figure_6-Bylot_modularity/Figure6.svg", #file name
     width = (180/25.4), #enter in mm, 25.4 to convert from mmm to inch
     heigh= (120/25.4),
     bg = "white") #background color) 
@@ -125,6 +140,9 @@ ggplot()+
   ggplot2::theme_bw() +  
   ggplot2::scale_x_discrete(drop = FALSE) +
   ggplot2::scale_y_discrete(drop = FALSE) +
+  geom_rect(aes(xmin = boxes_coords$min_x -1, xmax = boxes_coords$max_x+1, ymin = boxes_coords$min_y-0.4, ymax = boxes_coords$max_y+0.4),
+            fill = "transparent", color = "red", size = 1.5)+
+  theme_classic()+
   theme(legend.position='none',
         panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
