@@ -7,7 +7,7 @@
    viewBox="0 0 140 155"
    version="1.1"
    id="svg5"
-   inkscape:version="1.2.1 (2ed6d7ae0b, 2022-08-22, custom)"
+   inkscape:version="1.2.1 (0b8a7e5fb6, 2022-09-14, custom)"
    sodipodi:docname="FigurePropEcoregion.svg"
    inkscape:export-filename="../ba2e0843/Supplementary_Figure_2.png"
    inkscape:export-xdpi="300"
@@ -26,15 +26,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.4142136"
-     inkscape:cx="232.63813"
-     inkscape:cy="186.32264"
+     inkscape:zoom="2.8284272"
+     inkscape:cx="96.69685"
+     inkscape:cy="77.604967"
      inkscape:window-width="1920"
      inkscape:window-height="923"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g378184"
+     inkscape:current-layer="g14176"
      height="160mm"
      width="190mm"
      showguides="true"
@@ -705,8 +705,8 @@
            id="rect785"
            width="216.82104"
            height="238.71416"
-           x="7.9279861"
-           y="24.618399" />
+           x="8.0725098"
+           y="24.231119" />
         <g
            id="g14176"
            transform="matrix(1.0297813,0,0,1.0297813,0.16153026,-2.6316693)">
@@ -873,9 +873,9 @@
                style="font-size:12px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect54551);display:inline"><tspan
                  x="5.5214844"
                  y="24.801825"
-                 id="tspan1307"><tspan
+                 id="tspan1055"><tspan
                    style="font-weight:bold;-inkscape-font-specification:'Roboto Bold'"
-                   id="tspan1305">1)</tspan></tspan></text>
+                   id="tspan1053">1)</tspan></tspan></text>
           </g>
           <g
              id="g305735"
@@ -1019,9 +1019,9 @@
                style="font-size:12px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect54551-2);display:inline"><tspan
                  x="5.5214844"
                  y="24.801825"
-                 id="tspan1311"><tspan
+                 id="tspan1059"><tspan
                    style="font-weight:bold;-inkscape-font-specification:'Roboto Bold'"
-                   id="tspan1309">2)</tspan></tspan></text>
+                   id="tspan1057">2)</tspan></tspan></text>
             <text
                xml:space="preserve"
                style="font-size:4.76345px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;letter-spacing:0px;word-spacing:0px;stroke-width:0.396954"
@@ -1045,32 +1045,32 @@
              x="68.415642"
              y="104.01215"
              id="text206688-7-7-2-9-3-7"
-             transform="matrix(1.1257656,0,0,1.1257656,-51.29702,-13.618929)"><tspan
+             transform="matrix(1.1257656,0,0,1.1257656,-50.156174,-13.618929)"><tspan
                x="68.415642"
                y="104.01215"
-               id="tspan1315"><tspan
+               id="tspan1063"><tspan
                  style="font-weight:bold;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;fill:#17450b"
-                 id="tspan1313">Filtering the refined non-breeding range
+                 id="tspan1061">Filtering the refined non-breeding range
 </tspan></tspan><tspan
                x="68.415642"
                y="108.15075"
-               id="tspan1319"><tspan
+               id="tspan1067"><tspan
                  style="font-weight:bold;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle;fill:#17450b"
-                 id="tspan1317"> based on non-breeding habitat
+                 id="tspan1065"> based on non-breeding habitat
 </tspan></tspan><tspan
                x="68.415642"
                y="112.28936"
-               id="tspan1325"><tspan
-                 style="fill:#17450b"
-                 id="tspan1321"> type (e.g. terrestrial only)</tspan><tspan
+               id="tspan1073"><tspan
+                 style="font-weight:bold;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#17450b"
+                 id="tspan1069"> type (e.g., here terrestrial only)</tspan><tspan
                  style="font-weight:bold;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';text-align:center;text-anchor:middle"
-                 id="tspan1323">
+                 id="tspan1071">
 </tspan></tspan><tspan
                x="68.415642"
                y="116.42796"
-               id="tspan1329"><tspan
+               id="tspan1077"><tspan
                  style="font-style:italic;font-weight:bold;font-family:Roboto;-inkscape-font-specification:'Roboto Bold Italic';text-align:center;text-anchor:middle;fill:#000000"
-                 id="tspan1327">(4 ecoregions)</tspan></tspan></text>
+                 id="tspan1075">(4 ecoregions)</tspan></tspan></text>
           <g
              id="g50499"
              transform="matrix(1.1257656,0,0,1.1257656,8.7443327,85.960893)">
@@ -1136,9 +1136,9 @@
              style="font-size:12px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect54551-2-9);display:inline"><tspan
                x="5.5214844"
                y="24.801825"
-               id="tspan1333"><tspan
+               id="tspan1081"><tspan
                  style="font-weight:bold;-inkscape-font-specification:'Roboto Bold'"
-                 id="tspan1331">3)</tspan></tspan></text>
+                 id="tspan1079">3)</tspan></tspan></text>
           <path
              id="path4310-0-2"
              style="fill:none;fill-opacity:0.529412;stroke:#17450b;stroke-width:0.958146;stroke-miterlimit:4;stroke-dasharray:1.91629, 0.958146;stroke-dashoffset:0;stroke-opacity:1"
@@ -1352,9 +1352,9 @@
                style="font-size:12px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect54551-2-9-8);display:inline"><tspan
                  x="5.5214844"
                  y="24.801825"
-                 id="tspan1337"><tspan
+                 id="tspan1085"><tspan
                    style="font-weight:bold;-inkscape-font-specification:'Roboto Bold'"
-                   id="tspan1335">4)</tspan></tspan></text>
+                   id="tspan1083">4)</tspan></tspan></text>
             <text
                xml:space="preserve"
                transform="matrix(0.29787571,0,0,0.29787571,17.906281,129.32034)"
@@ -1365,9 +1365,9 @@
                inkscape:export-ydpi="96"><tspan
                  x="5.5214844"
                  y="24.801825"
-                 id="tspan1341"><tspan
+                 id="tspan1089"><tspan
                    style="font-weight:bold;-inkscape-font-specification:'Roboto Bold'"
-                   id="tspan1339">5)</tspan></tspan></text>
+                   id="tspan1087">5)</tspan></tspan></text>
             <path
                id="path4310-0-2-2"
                style="fill:none;fill-opacity:1;stroke:#0000d6;stroke-width:0.638673;stroke-miterlimit:4;stroke-dasharray:1.27735, 0.638673;stroke-dashoffset:0;stroke-opacity:1"
@@ -1453,6 +1453,17 @@
              id="path330219-8"
              inkscape:path-effect="#path-effect330221-6"
              inkscape:original-d="m 33.667914,246.04777 c 4.51e-4,-23.05121 4.51e-4,-46.1022 0,-69.15302" />
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.76345px;font-family:Roboto;-inkscape-font-specification:'Roboto Bold';fill:#ffffff;stroke-width:0.396954"
+             x="65.342911"
+             y="113.91135"
+             id="text529"><tspan
+               sodipodi:role="line"
+               id="tspan527"
+               style="stroke-width:0.396954"
+               x="65.342911"
+               y="113.91135" /></text>
         </g>
       </g>
     </g>

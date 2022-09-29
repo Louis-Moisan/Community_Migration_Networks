@@ -3,11 +3,15 @@
 #Creation Date: January 27 2021
 
 
+###!!! Message " although coordinates are longitude/latitude, st_intersection assumes that they are planar"
+#   https://gis.stackexchange.com/questions/381446/choosing-projection-for-running-polygon-intersections-at-global-scale-i-e-geod
+
 #------------------#
 #### Librairies ####
 #------------------#
 library(dplyr)
 library(sf)
+sf_use_s2(FALSE)
 library(plyr)
 source("scripts/functions/1_functions_data_manip.R")
 
@@ -118,67 +122,74 @@ sp_range <-  read.csv("data/metadata/TableS1.SpeciesRange.csv") %>%
 
 #---- Birdlife filter by habitat and flyway ecoregions data frame
 birdlife_eco_hab_fly <- sf::st_read("data/shapefiles/overlap_range_ecoregions/birdlife_eco_fly.shp") %>% 
-  sf::st_drop_geometry() %>% 
   dplyr::semi_join(sp_fly, by= c("species","flyway")) %>% #flyway filter
-  dplyr::select(species, ecoregion, province, realm, eco_type) %>% 
-  unique() %>% 
-  dplyr::semi_join(sp_eco_type, by= c("species","eco_type")) %>% #habitat filter
-  unique()
+  dplyr::semi_join(sp_eco_type, by= c("species","eco_type")) %>% 
+  dplyr::select(species, ecoregion, province, realm, eco_type, geometry) %>% 
+  dplyr::group_by(species, realm, province, ecoregion, eco_type) %>% 
+  dplyr::summarize() #habitat filter
+
+
 #---- eBird filter by habitat and flyway ecoregions data frame
 ebird_eco_hab_fly <- sf::st_read("data/shapefiles/overlap_range_ecoregions/ebird_eco_fly.shp") %>% 
-  sf::st_drop_geometry() %>% 
   dplyr::semi_join(sp_fly, by= c("species","flyway")) %>% #flyway filter
-  dplyr::select(species, ecoregion, province, realm, eco_type) %>% 
-  unique() %>% 
-  dplyr::semi_join(sp_eco_type, by= c("species","eco_type")) %>% #habitat filter
-  unique()
+  dplyr::semi_join(sp_eco_type, by= c("species","eco_type")) %>% 
+  dplyr::select(species, ecoregion, province, realm, eco_type, geometry) %>% 
+  dplyr::group_by(species, realm, province, ecoregion, eco_type) %>% 
+  dplyr::summarize() #habitat filter
 
 #---- eBird-Birdlife filter by habitat and flyway ecoregions data frame
 ebird_birdlife_eco_hab_fly <- sf::st_read("data/shapefiles/overlap_range_ecoregions/ebird_birdlife_eco_fly.shp") %>% 
-  sf::st_drop_geometry() %>% 
   dplyr::semi_join(sp_fly, by= c("species","flyway")) %>% #flyway filter
-  dplyr::select(species, ecoregion, province, realm, eco_type) %>% 
-  unique() %>% 
-  dplyr::semi_join(sp_eco_type, by= c("species","eco_type")) %>% #habitat filter
-  unique()
+  dplyr::semi_join(sp_eco_type, by= c("species","eco_type")) %>% 
+  dplyr::select(species, ecoregion, province, realm, eco_type, geometry) %>% 
+  dplyr::group_by(species, realm, province, ecoregion, eco_type) %>% 
+  dplyr::summarize() #habitat filter
 
 #----- Selecting species using Ebird-Flyway ecoregions
 optimal_ebird <-  ebird_eco_hab_fly %>% 
   dplyr::filter(species %in% sp_range[sp_range$data == "ebird",]$species) %>% 
-  droplevels() %>% 
-  unique()
+  dplyr::group_by(species, realm, province, ecoregion, eco_type) %>% 
+  dplyr::summarize()
 
 #---- Selecting species using Birdlife-Flyway ecoregions
 optimal_birdlife <-  birdlife_eco_hab_fly %>% 
   dplyr::filter(species %in% sp_range[sp_range$data == "birdlife",]$species) %>% 
-  droplevels() %>% 
-  unique()
+  dplyr::group_by(species, realm, province, ecoregion, eco_type) %>% 
+  dplyr::summarize()
+
 #----- Selecting species using Ebird-Birdlife-Flyway ecoregions
 optimal_ebird_birdlife <-  ebird_birdlife_eco_hab_fly %>% 
   dplyr::filter(species %in% sp_range[sp_range$data == "ebird_birdlife",]$species) %>% 
-  droplevels() %>% 
-  unique()
+  dplyr::group_by(species, realm, province, ecoregion, eco_type) %>% 
+  dplyr::summarize()
 
 #---- Tracked species
 optimal_tracked_species <- sf::st_read("data/shapefiles/overlap_range_ecoregions/sp_track_eco_fly.shp") %>% 
-  sf::st_drop_geometry() %>% 
-  unique() %>% 
   dplyr::semi_join(sp_fly, by= c("species","flyway")) %>% #flyway filter
-  dplyr::select(species, ecoregion, province, realm, eco_type) %>% 
-  unique() %>% 
   dplyr::semi_join(sp_eco_type, by= c("species","eco_type")) %>% #habitat filter
-  unique()
+  dplyr::group_by(species, realm, province, ecoregion, eco_type) %>% 
+  dplyr::summarize()
+
 
 #---- Combine all data source together
+partial_migrant_eco <- sf::st_read("data/shapefiles/overlap_range_ecoregions/partial_migrant_eco.shp")
 optimal_eco <- rbind.data.frame(optimal_ebird,
                                 optimal_birdlife,
                                 optimal_ebird_birdlife,
-                                optimal_tracked_species) %>% 
-  dplyr::select(species, ecoregion) %>% 
-  rbind.data.frame(bylot_sp %>% 
-                     dplyr::select(species, ecoregion))
+                                optimal_tracked_species,
+                                partial_migrant_eco) 
+#Export the ecoregions inside each migratory and partially migratory species from Bylot
+sf::st_write(optimal_eco,"data/shapefiles/overlap_range_ecoregions/bylot_non_breeding_range_eco.shp")
+
+optimal_eco_df <- optimal_eco %>% 
+  sf::st_drop_geometry() %>% 
+  dplyr::group_by(species, ecoregion, eco_type) %>% 
+  unique() %>% 
+  rbind(resident_eco) %>% 
+  dplyr::select(species, ecoregion)
   
+
 #---Matrix
-optimal_eco <- table(unique(optimal_eco[, c("species", "ecoregion")]))
+optimal_eco <- table(unique(optimal_eco_df[, c("species", "ecoregion")]))
 #----- Export as .csv
 write.csv(optimal_eco, "data/adjency_matrix/optimal_eco.csv")

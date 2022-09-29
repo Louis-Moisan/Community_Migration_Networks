@@ -37,7 +37,8 @@ sp_order <- sp_col$species
 
 #Ecoregion type
 eco_type <- read.csv("data/metadata/ecoregion_type.csv") %>% 
-  dplyr::arrange(eco_type, realm, province)%>% select(ecoregion, eco_type)
+  dplyr::arrange(eco_type, realm, province)%>%
+  dplyr::select(ecoregion, eco_type)
 eco_type <-  eco_type[eco_type$ecoregion %in% colnames(optimal_eco),] %>%
   unique() %>%
   dplyr::arrange(eco_type)
@@ -107,12 +108,13 @@ optimal_eco_modules_null <- run_infomap_monolayer(optimal_eco_net, infomap_execu
 a <- plot_modular_matrix_modif(optimal_eco_modules, transpose = F, fix_coordinates = T, axes_titles=c('Migratory Species', 'Ecoregions'), outside_module_col='gray')
 #ecoregions
 eco_module_list <- data.frame(node_name= ggplot_build(a)$layout$panel_params[[1]]$x.sec$breaks)
-eco_module_list <- left_join(eco_module_list, optimal_eco_modules$modules[c("node_name", "module_level1")], by= "node_name")
+eco_module_list <- dplyr::left_join(eco_module_list, optimal_eco_modules$modules[c("node_name", "module_level1")], by= "node_name")
 eco_module_list$type <- "ecoregions"
+eco_module_list <- left_join(eco_module_list, eco_type, by = c("node_name" = "ecoregion"))
 write.csv(eco_module_list, "data/modules/EcoregionsModulesList.csv")
 #species
 sp_module_list <- data.frame(node_name= ggplot_build(a)$layout$panel_params[[1]]$y.sec$breaks)
-sp_module_list <- left_join(sp_module_list, optimal_eco_modules$modules[c("node_name", "module_level1")], by= "node_name")
+sp_module_list <- dplyr::left_join(sp_module_list, optimal_eco_modules$modules[c("node_name", "module_level1")], by= "node_name")
 sp_module_list$type <- "species"
 write.csv(sp_module_list, "data/modules/SpeciesModulesList.csv")
 #combine ecoregions and species modules list
@@ -121,15 +123,15 @@ write.csv(node_module_list, "data/modules/NodeModulesList.csv")
 
 #Number of ecoregions in each modules
 optimal_eco_modules$modules %>%
-  filter(node_name %in% eco_type$ecoregion) %>%
-  group_by(module_level1) %>%
-  summarise(nb_eco= n())
+  dplyr::filter(node_name %in% eco_type$ecoregion) %>%
+  dplyr::group_by(module_level1) %>%
+  dplyr::summarise(nb_eco= n())
 #Number of species in each modules
  optimal_eco_modules$modules %>%
-   filter(node_name %in% sp_col$species) %>%
+   dplyr::filter(node_name %in% sp_col$species) %>%
    na.omit() %>%
-   group_by(module_level1) %>%
-   summarise(nb_eco= n())
+   dplyr::group_by(module_level1) %>%
+   dplyr::summarise(nb_eco= n())
 
 
 # Plot histograms
@@ -156,18 +158,13 @@ plot_grid(
   nulls_eco <- bipartite::nullmodel(optimal_eco, method= 4, N= 1000)
   #Calcul nestedness of null models
   Tnulls_eco <- sapply(nulls_eco, function(x) nestedtemp(x, weighted= F)$statistic[[1]])
+
+
   #Plot 
   plot(density(Tnulls_eco), xlim=c(0, 40), lwd=2, main="NODF")+
     abline(v=Tobs_eco, col="red", lwd=2)
   #p value
   sum(Tnulls_eco< Tobs_eco)/1000
-  # Network-level statistics
-  bipartite_stats(sil.null, index.type = "networklevel",
-                  indices = c("linkage density", "weighted connectance", 
-                              "interaction evenness"), intereven = "sum", 
-                  prog.count = FALSE)
-  
-  Tobs_eco <- bipartite::networklevel(optimal_eco, weighted = FALSE, level = "both", index= c("nestedness"))[[1]]
   
   
   #-----Ecoregions without Peregrine Falcon
@@ -182,13 +179,3 @@ plot_grid(
     abline(v=Tobs_eco_no_falcon, col="red", lwd=2)
   #p value
   sum(Tnulls_eco_no_falcon< Tobs_eco_no_falcon)/1000
-  # Network-level statistics
-  bipartite_stats(sil.null, index.type = "networklevel",
-                  indices = c("linkage density", "weighted connectance", 
-                              "interaction evenness"), intereven = "sum", 
-                  prog.count = FALSE)
-  
-  Tobs_eco <- bipartite::networklevel(optimal_eco, weighted = FALSE, level = "both", index= c("nestedness"))[[1]]
-
-
-

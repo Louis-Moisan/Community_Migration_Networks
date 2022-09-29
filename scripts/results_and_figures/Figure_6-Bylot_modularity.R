@@ -44,15 +44,15 @@ M_set1 <- M_set2 <- x$edge_list[1:3]
 names(M_set1) <- names(M_set2) <- names(x$edge_list)[1:3] <- c('Set1','Set2','w')
 
 M_set1 %<>%
-  left_join(x$modules, by=c('Set1'='node_name')) %>%
-  rename(module1=module_level1)
+  dplyr::left_join(x$modules, by=c('Set1'='node_name')) %>%
+  dplyr::rename(module1=module_level1)
 
 M_set2 %<>%
-  left_join(x$modules, by=c('Set2'='node_name')) %>%
-  rename(module2=module_level1)
+  dplyr::left_join(x$modules, by=c('Set2'='node_name')) %>%
+  dplyr::rename(module2=module_level1)
 
 # Join into a single tibble
-  M <- full_join(M_set1, M_set2, by = c("Set1", "Set2", "w")) %>% 
+  M <- dplyr::full_join(M_set1, M_set2, by = c("Set1", "Set2", "w")) %>% 
     dplyr::select(Set1, Set2, w, module1, module2)
 
 # Order by modules
@@ -67,9 +67,9 @@ Set2_modules <- with(Set2_modules, Set2_modules[order(module2,Set2),]) %>%
   dplyr::arrange(module2,desc(non_breeding_strategy), trophic_level, sub_order) %>% dplyr::select(Set2, module2)
 
 M %<>% 
-  mutate(edge_in_out=ifelse(module1==module2,'in','out')) %>% # Determine if an interaction falls inside or outside a module
-  mutate(value_mod=ifelse(edge_in_out=='in',module1,0)) %>% # Assign a module value of 0 if interaction falls outside the modules
-  mutate(Set1=factor(Set1, levels=Set1_modules$Set1), Set2=factor(Set2, levels=rev(Set2_modules$Set2)))
+  dplyr::mutate(edge_in_out=ifelse(module1==module2,'in','out')) %>% # Determine if an interaction falls inside or outside a module
+  dplyr::mutate(value_mod=ifelse(edge_in_out=='in',module1,0)) %>% # Assign a module value of 0 if interaction falls outside the modules
+  dplyr::mutate(Set1=factor(Set1, levels=Set1_modules$Set1), Set2=factor(Set2, levels=rev(Set2_modules$Set2)))
 
 
 # Join the module colors to the edge list
@@ -96,8 +96,8 @@ module_colors <- tibble(module1=sort(unique(M$module1)), col=colors[1:length(uni
 
 
 M %<>%
-  left_join(module_colors) %>%
-  mutate(col=ifelse(edge_in_out=='in',col,outside_module_col)) 
+  dplyr::left_join(module_colors) %>%
+  dplyr::mutate(col=ifelse(edge_in_out=='in',col,outside_module_col)) 
 
 #Add resident species
 resident_sp <- data_frame(Set1 = rep(NA, times= 5), Set2= c("Rock Ptarmigan", "Ermine", "Collared Lemming", "Brown Lemming", "Arctic Hare"), w= rep(0, times= 5), module1= rep(NA, times= 5), module2= rep(NA, times= 5), edge_in_out=rep(NA, times= 5), value_mod=rep(NA, times= 5), col= rep(NA, times= 5))
@@ -105,26 +105,26 @@ resident_sp <- data_frame(Set1 = rep(NA, times= 5), Set2= c("Rock Ptarmigan", "E
 M <- rbind.data.frame(M, resident_sp)
 
 #Colors for species label
-y.lab.col <-  left_join(data.frame(species= rev(levels(M$Set2))), sp_colors, by= "species") %>% 
+y.lab.col <-  dplyr::left_join(data.frame(species= rev(levels(M$Set2))), sp_colors, by= "species") %>% 
   dplyr::filter(vertebrate == "Y") %>% 
-  select(func_group_col) %>% 
-  mutate(func_group_col= as.character(func_group_col))
+  dplyr::select(func_group_col) %>% 
+  dplyr::mutate(func_group_col= as.character(func_group_col))
 
 #---Define bounding boxes for each modules
 # y min and max values for each boxe
 y_coords_boxes <-  Set2_modules %>%
   dplyr::arrange(desc(module2)) %>% 
-  mutate(y_coords= 1:length(module2)) %>% 
-  group_by(module2) %>% 
-  summarise(min_y= min(y_coords), max_y= max(y_coords))
+  dplyr::mutate(y_coords= 1:length(module2)) %>% 
+  dplyr::group_by(module2) %>% 
+  dplyr::summarise(min_y= min(y_coords), max_y= max(y_coords))
 
 x_coords_boxes <-  Set1_modules %>% 
-  mutate(x_coords= 1:length(module1)) %>% 
-  group_by(module1) %>% 
-  summarise(min_x= min(x_coords), max_x= max(x_coords))
+  dplyr::mutate(x_coords= 1:length(module1)) %>% 
+  dplyr::group_by(module1) %>% 
+  dplyr::summarise(min_x= min(x_coords), max_x= max(x_coords))
 
 boxes_coords <- dplyr::left_join(x_coords_boxes, y_coords_boxes, by= c("module1"= "module2")) %>% 
-  dplyr::rename( module= module1)
+  dplyr::rename(module= module1)
 #Plot incidence matrix as heat map with species and rows order by modules
 svg("figures/Figure_6-Bylot_modularity/Figure6.svg", #file name
     width = (180/25.4), #enter in mm, 25.4 to convert from mmm to inch
@@ -136,6 +136,7 @@ ggplot()+
     geom_tile(data=M, aes(Set1, Set2, fill="black"))+
   geom_tile(data=M %>% filter(w==0), aes(Set1, Set2, fill="white"))+# Interactions  whitin modules
   labs(x=axes_titles[2], y=axes_titles[1]) +
+  geom_tile(data= M %>% filter(edge_in_out == "out"),aes(Set1, Set2, fill="#e8c9ab"))+
   scale_fill_identity()+
   ggplot2::theme_bw() +  
   ggplot2::scale_x_discrete(drop = FALSE) +

@@ -19,7 +19,6 @@ Aranea,
 Lepidoptera,
 Ichneumonidae,
 Carabidae",Resident,-,-
-Arthropods,-,Resident,-,-
 Lemmings,"Collared Lemming
 (Dicrostonyx groenlandicus)",Resident,-,-
 Lemmings,"Brown Lemming
@@ -47,7 +46,7 @@ Shorebirds,"American Golden-Plover
 Shorebirds,"Black-bellied Plover
 (Pluvialis squatarola)",Migrant,eBird,Ebird range falls inside the boundary of the Birdlife range
 Shorebirds,"Common-ringed Plover
-(Charadrius hiaticula)",Migrant,Tracking,"LÇandri-Breton, D.-J., Lamarre, J.-F., and Bàty, J. (2019). Seasonal variation in migration strategies used to cross ecological barriers in a nearctic migrant wintering in Africa. J. Avian Biol. 50, e02101. https://doi.org/10.1111/jav.02101 "
+(Charadrius hiaticula)",Migrant,Tracking,"L√©andri-Breton, D.-J., Lamarre, J.-F., and B√™ty, J. (2019). Seasonal variation in migration strategies used to cross ecological barriers in a nearctic migrant wintering in Africa. J. Avian Biol. 50, e02101. https://doi.org/10.1111/jav.02101 "
 Shorebirds,"Ruddy Turnstone
 (Arenaria interpres)",Migrant,Birdlife,Birdlife range encompass palearctic distribution
 Shorebirds,"Red Phalarope
@@ -75,7 +74,7 @@ Ermines,"Ermine
 Cranes,"Sandhill Crane
 (Antigone canadensis)",Migrant,eBird-Birdlife,Visual inspection of the overlap with the Ebird relative abundance map
 Jaegers,"Long-tailed Jaeger
-(Stercorarius longicaudus)",Migrant,Tracking,"Seyer, Y., Gauthier, G., Bàty, J., Therrien, J.-F., and Lecomte, N. (2021). Seasonal variations in migration strategy of a long-distance Arctic-breeding seabird. Mar. Ecol. Prog. Ser. 677, 1-16. https://doi.org/10.3354/meps13905 "
+(Stercorarius longicaudus)",Migrant,Tracking,"Seyer, Y., Gauthier, G., B√™ty, J., Therrien, J.-F., and Lecomte, N. (2021). Seasonal variations in migration strategy of a long-distance Arctic-breeding seabird. Mar. Ecol. Prog. Ser. 677, 1-16. https://doi.org/10.3354/meps13905 "
 Jaegers,"Parasitic Jaeger
 (Stercorarius parasiticus)",Migrant,Birdlife,Species found mostly in marine habitats during non-breeding
 Gulls,"Glaucous Gull
@@ -87,6 +86,6 @@ Raptors,"Peregrine Falcon
 Raptors,"Rough-legged Hawk
 (Buteo lagopus)",Migrant,eBird,Visual inspection of the overlap with the Ebird relative abundance map
 Raptors,"Snowy Owl
-(Bubo scandiacus)",Migrant,Tracking and eBird,"Robillard, A., Gauthier, G., Therrien, J.-F., and Bàty, J. (2018). Wintering space use and site fidelity in a nomadic species, the snowy owl. J. Avian Biol. 49, jav-01707. https://doi.org/10.1111/jav.01707 "
+(Bubo scandiacus)",Migrant,Tracking and eBird,"Robillard, A., Gauthier, G., Therrien, J.-F., and B√™ty, J. (2018). Wintering space use and site fidelity in a nomadic species, the snowy owl. J. Avian Biol. 49, jav‚Äì01707. https://doi.org/10.1111/jav.01707 "
 Foxes,"Arctic Fox
-(Vulpes lagopus)",Partial migrant,500 km buffer,"Lai, S., Bàty, J., and Berteaux, D. (2017). Movement tactics of a mobile predator in a meta-ecosystem with fluctuating resources: the arctic fox in the High Arctic. Oikos 126, 937-947. https://doi.org/10.1111/oik.03948 "
+(Vulpes lagopus)",Partial migrant,500 km buffer,"Lai, S., B√™ty, J., and Berteaux, D. (2017). Movement tactics of a mobile predator in a meta‚Äêecosystem with fluctuating resources: the arctic fox in the High Arctic. Oikos 126, 937-947. https://doi.org/10.1111/oik.03948 "

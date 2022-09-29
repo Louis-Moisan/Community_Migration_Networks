@@ -12,6 +12,7 @@ library(rnaturalearthdata)
 library(ggplot2)
 library(lubridate)
 library(adehabitatHR)
+library(raster)
 
 
 ##### INPUT FILES
@@ -37,9 +38,8 @@ snow_north_america$year <- lubridate::year(snow_north_america$date)
 #---------------------------------------------#
 bylot_id <- c("39097", "39100", "38596", "38610", "38602", "39078", "39103", "48837", "148839", "106398", "106399", "106400", "106401", "106402", "106403", "134872", "134873")
 
-snow_bylot <- snow_north_america[snow_north_america$tag_ident %in% bylot_id,]
-
-
+snow_bylot <- snow_north_america[snow_north_america$tag_ident %in% bylot_id,] %>% 
+  dplyr::mutate(tag_ident = as.factor(tag_ident))
 
 #---------------------------#
 #### Visualize locations ####
@@ -59,7 +59,7 @@ ggplot2::ggplot(data = world) + #world map
 #### Filter data to get only wintering locations ####
 #---------------------------------------------------#
 #Read the arrival and departure date of each bylot snowy owl
-snow_wintering_date <- read.csv("data/snowy_owl/snowy_bylot_wintering_dates.csv") %>%
+snow_wintering_date <- read.csv("data/tracking/snowy_owl/snowy_bylot_wintering_dates.csv") %>%
   dplyr::mutate_at(vars(Arrival_w1, Departure_w1, Arrival_w2, Departure_w2, Arrival_w3, Departure_w3), funs(as.Date(., "%Y-%m-%d")))
 
 
@@ -84,6 +84,7 @@ snow_bylot_filter_w2 <-snow_bylot[FALSE,]
 
 for (i in levels(snow_bylot$tag_ident)){
   if (i %in% snow_wintering_date$tag_id) {
+    print(i)
     p <- snow_bylot[snow_bylot$tag_ident == i, ] %>%
       dplyr::filter(date >= snow_wintering_date[snow_wintering_date$tag_id == i, ]$Arrival_w2 & date <= snow_wintering_date[snow_wintering_date$tag_id == i, ]$Departure_w2)
     snow_bylot_filter_w2 <-  rbind(snow_bylot_filter_w2, p) }
@@ -164,3 +165,16 @@ sf::st_write(winter.area.href, "data/shapefiles/raw/range_maps/tracking/snow_win
 # Kernel distribution: Bivariate normal kernel
 # Grid resoltion: Software default, automated
 # Scaling or standardization: 
+
+#------------------------------------------#
+##### Export a raster of kernel density ####
+#------------------------------------------#
+# Extract the UD values and coordinates into a data frame
+kernel.href.df <-data.frame("value" = kernel.href$ud, "lon" = kernel.href@coords[,1], "lat" = kernel.href@coords[,2])
+sp::coordinates(kernel.href.df)<-~lon+lat
+# coerce to SpatialPixelsDataFrame
+sp::gridded(kernel.href.df) <- TRUE
+# coerce to raster
+kernel.raster <- raster::raster(kernel.href.df)
+#Export raster of kernel
+writeRaster(kernel.raster, filename = "data/tracking/snowy_owl/snow_non_breeding_kernel.tif")

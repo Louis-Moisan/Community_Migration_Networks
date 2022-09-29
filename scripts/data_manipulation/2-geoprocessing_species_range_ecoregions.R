@@ -3,6 +3,9 @@
 #Creation date: May 2021
 #Review date: September 1st 2022
 
+sf_use_s2(FALSE)
+###!!! Message " although coordinates are longitude/latitude, st_intersection assumes that they are planar"
+#   https://gis.stackexchange.com/questions/381446/choosing-projection-for-running-polygon-intersections-at-global-scale-i-e-geod
 
 ##### INPUT FILES
 # - data/shapefiles/raw/flyways.shp

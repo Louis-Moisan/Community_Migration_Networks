@@ -21,7 +21,7 @@
   
   #General map background
     world <- rnaturalearth::ne_countries(scale = "medium", returnclass = "sf")
-    ocean <- st_read("data/shapefiles/raw/oceans.shp")
+    ocean <- sf::st_read("data/shapefiles/raw/oceans.shp")
   
   #--------------------------------------#
   ##### Non-breeding range centroids #####
@@ -41,16 +41,16 @@
   dplyr::mutate(func_group_col= as.character(func_group_col)) #Change the color factor as character so it works well
   
   #----- Assign colors to centroids
-  non_breeding_range_centro <- left_join(non_breeding_range_centro, sp_col[c("species", "func_group","func_group_col","trophic_level", "sub_level")], by= "species") %>%
-    mutate(type = "single")%>%
-    arrange(trophic_level, sub_level)  
+  non_breeding_range_centro <- dplyr::left_join(non_breeding_range_centro, sp_col[c("species", "func_group","func_group_col","trophic_level", "sub_order")], by= "species") %>%
+    dplyr::mutate(type = "single")%>%
+    dplyr::arrange(trophic_level, sub_order)  
   
 #!!! QGIS ALERT !!! The centroids of species with divided non-breeding range (Long-tailed Jaeger, Red Knot, Parasitic Jaeger, Ruddy Turnstone and Black-bellied plover) were set by selecting each part of the divided range and using the tool "Centroids". It is important to note that the location of some centroids were slightly relocated to better represent the habitat type (e.g., moving the centroids of Red Knot was inland, but the species remain on coast during winter)
   #Adding the centroids defined in QGIS
   non_breeding_range_centro_double <- sf::st_read("data/shapefiles/non_breeding_range_centro_double_modified.shp") %>%
-    left_join( sp_col[c("species", "func_group","func_group_col","trophic_level", "sub_level")], by= "species") %>%
-    mutate(type = "double") %>% 
-    arrange(trophic_level, sub_level)
+    dplyr::left_join( sp_col[c("species", "func_group","func_group_col","trophic_level", "sub_order")], by= "species") %>%
+    dplyr::mutate(type = "double") %>% 
+    dplyr::arrange(trophic_level, sub_order)
   
   #Remove those species from the single centroid list
   non_breeding_range_centro <- non_breeding_range_centro[!(non_breeding_range_centro$species %in% unique(non_breeding_range_centro_double$species)),]
@@ -66,8 +66,8 @@
   non_breeding_range_centro$species <- factor(non_breeding_range_centro$species, levels =  unique(non_breeding_range_centro$species))
   
   #----- Assign colors to non breeding range
-  non_breeding_range <- left_join(non_breeding_range, sp_col[c("species","func_group","func_group_col","trophic_level", "sub_level")], by= "species") %>%
-    arrange(trophic_level, sub_level)
+  non_breeding_range <- dplyr::left_join(non_breeding_range, sp_col[c("species","func_group","func_group_col","trophic_level", "sub_order")], by= "species") %>%
+    dplyr::arrange(trophic_level, sub_order)
   
   #Reorder factor level for plot legend
   non_breeding_range$func_group <- factor(non_breeding_range$func_group,  levels = unique(non_breeding_range_centro$func_group))

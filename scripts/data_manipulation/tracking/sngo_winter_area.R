@@ -18,6 +18,7 @@ library(rnaturalearthdata)
 library(ggplot2)
 library(lubridate)
 library(adehabitatHR)
+library(raster)
 
 
 #---------------------------------------------------#
@@ -125,3 +126,16 @@ sf::st_write(winter.area.href, "data/shapefiles/raw/range_maps/tracking/sngo_win
 # Band width selection: Automated selection with ad hoc method
 # Kernel distribution: Bivariate normal kernel
 # Grid resoltion: Software default, automated
+
+#------------------------------------------#
+##### Export a raster of kernel density ####
+#------------------------------------------#
+# Extract the UD values and coordinates into a data frame
+kernel.href.df <-data.frame("value" = kernel.href$ud, "lon" = kernel.href@coords[,1], "lat" = kernel.href@coords[,2])
+sp::coordinates(kernel.href.df)<-~lon+lat
+# coerce to SpatialPixelsDataFrame
+sp::gridded(kernel.href.df) <- TRUE
+# coerce to raster
+kernel.raster <- raster::raster(kernel.href.df)
+#Export raster of kernel
+writeRaster(kernel.raster, filename = "data/tracking/snow_goose/sngo_non_breeding_kernel.tif")

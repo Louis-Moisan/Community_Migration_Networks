@@ -22,13 +22,16 @@ library(rnaturalearthdata)
 library(ggplot2)
 library(lubridate)
 library(adehabitatHR)
+library(raster)
 
 #--------------------------------------------------------------#
 #### Import the shapefile of common ringeg plover locations ####
 #--------------------------------------------------------------#
-crpl_bylot <- sf::st_read("data/tracking/ringed_plover/Bylot_CRPL.shp") %>%  mutate(timestamp= strptime(x = as.character(timestamp),                                                                                 format = "%Y-%m-%d %H:%M:%S"))
+crpl_bylot <- sf::st_read("data/tracking/ringed_plover/Bylot_CRPL.shp") %>%  mutate(timestamp= strptime(x = as.character(timestamp), format = "%Y-%m-%d %H:%M:%S")) %>% 
+  dplyr::mutate(date= lubridate::date(timestamp)) %>% 
+  dplyr::mutate(ind_ident= as.factor(ind_ident)) %>% 
+  dplyr::mutate(tag_ident = as.factor(tag_ident))
 
-crpl_bylot$date <- lubridate::date(crpl_bylot$timestamp)
 
 #---------------------------#
 #### Visualize locations ####
@@ -49,13 +52,13 @@ ggplot2::ggplot(data = world) + #world map
 #(Supplementary material Léandri-Breton et al., 2019)# 
 #----------------------------------------------------#
 #Get the wintering arrival and departure dates of each individual
-winter_dates <- read.csv("data/ringed_plover/crpl_winter_dates.csv")
+winter_dates <- read.csv("data/tracking/ringed_plover/crpl_winter_dates.csv")
 #Change string to date format
 winter_dates$Winter_arrival <-  as.Date(winter_dates$Winter_arrival,format="%Y/%d/%m")
 winter_dates$Winter_departure <-  as.Date(winter_dates$Winter_departure,format="%Y/%d/%m")
 
 #Match individual id to id number
-metadata <- read.csv("data/ringed_plover/Bylot_CRPL_Metadata.csv") %>% dplyr::mutate(animal.number= factor(animal.number))
+metadata <- read.csv("data/tracking/ringed_plover/Bylot_CRPL_Metadata.csv") %>% dplyr::mutate(animal.number= factor(animal.number))
 
 winter_dates <- dplyr::left_join(winter_dates, metadata, by= c("Individual"= "animal.number")) %>%  stats::na.omit()
 
@@ -65,6 +68,8 @@ winter_dates <- dplyr::left_join(winter_dates, metadata, by= c("Individual"= "an
 #---------------------------------------------------------------------------#
 #Filter locations based on the specific data of winter arrival and departure
 crpl_bylot_filter <-crpl_bylot[FALSE,]
+
+
 
 for (i in levels(crpl_bylot$ind_ident)){
   if (i %in% winter_dates$animal.id) {
@@ -107,6 +112,7 @@ kernel.lscv <- adehabitatHR::kernelUD(coords.spatialpoints, h = "LSCV")
 polygon.href <- adehabitatHR::getverticeshr(kernel.href, percent= 95)
 polygon.lscv <- adehabitatHR::getverticeshr(kernel.lscv, percent= 95)
 
+
 #The minimum h is represented in the scanned range (prensence of convergence)
 adehabitatHR::plotLSCV(kernel.lscv)
 
@@ -131,8 +137,9 @@ ggplot2::ggplot(data = world) + #world map
 
 
 #---Remove marine part of the wintering range due to uncertainty of geoloc
+sf::sf_use_s2(FALSE)
 #Read marine ecoregions shapefile
-marine <- sf::st_read("data/shapefiles/marine_ecoregions.shp") %>% st_union()
+marine <- sf::st_read("data/shapefiles/ecoregions/marine_ecoregions.shp") %>% st_union()
 #Crop
 winter.area.lscv.crop <- sf::st_difference(winter.area.lscv, marine)
 
@@ -146,7 +153,6 @@ ggplot2::ggplot(data = world) + #world map
   ggplot2::xlab("Longitude") + 
   ggplot2::ylab("Latitude") 
 
-
 sf::st_write(winter.area.lscv.crop, "data/shapefiles/raw/range_maps/tracking/crpl_winter_bylot.shp")
 # Smoothing: Fixed  
 # Band width selection: Automated selection with least-square cross validation method (LSCV)
@@ -154,3 +160,16 @@ sf::st_write(winter.area.lscv.crop, "data/shapefiles/raw/range_maps/tracking/crp
 # Kernel distribution: Bivariate normal kernel
 # Grid resoltion: Software default, automated
 # Scaling or standardization: 
+
+#------------------------------------------#
+##### Export a raster of kernel density ####
+#------------------------------------------#
+# Extract the UD values and coordinates into a data frame
+kernel.lscv.df <-data.frame("value" = kernel.lscv$ud, "lon" = kernel.lscv@coords[,1], "lat" = kernel.lscv@coords[,2])
+sp::coordinates(kernel.lscv.df)<-~lon+lat
+# coerce to SpatialPixelsDataFrame
+sp::gridded(kernel.lscv.df) <- TRUE
+# coerce to raster
+kernel.raster <- raster::raster(kernel.lscv.df)
+#Export raster of kernel
+writeRaster(kernel.raster, filename = "data/tracking/ringed_plover/crpl_non_breeding_kernel.tif")

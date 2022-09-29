@@ -17,13 +17,16 @@
 # - data/shapefiles/ecoregions/ecoregions.shp
 # - data/metadata/ecoregion_type.csv
 
-### Message " although coordinates are longitude/latitude, st_intersection assumes that they are planar"
-#   https://gis.stackexchange.com/questions/381446/choosing-projection-for-running-polygon-intersections-at-global-scale-i-e-geod
+
+
 
 #------------------#
 #### Librairies ####
 #------------------#
 library(sf)
+sf::sf_use_s2(FALSE)
+###!!! Message " although coordinates are longitude/latitude, st_intersection assumes that they are planar"
+#   https://gis.stackexchange.com/questions/381446/choosing-projection-for-running-polygon-intersections-at-global-scale-i-e-geod
 library(dplyr)
 library(plyr)
 
@@ -37,7 +40,6 @@ terrestrial <- sf::st_read("data/shapefiles/raw/ecoregions/wwf_terr_ecos.shp") %
   sf::st_make_valid() %>%  #Correct invalid geometries 
   dplyr::mutate_at(c("ECO_NAME", "REALM", "BIOME"), as.factor) #Change some variable to factor
 
-
 #The Lake ecoregions are not defined as regional ecoregions, so we will use the freshwater ecoregions of the globe to associated ecoregions to large lakes
 #Download link:https://geospatial.tnc.org/datasets/38da4656e8074e1c820c42cc21cd76cd_0/explore?location=-0.867642%2C0.000000%2C2.20&showTable=true
 freshwater <- sf::st_read("data/shapefiles/raw/ecoregions/Freshwater_Ecoregions.shp") %>% 
@@ -46,7 +48,6 @@ freshwater <- sf::st_read("data/shapefiles/raw/ecoregions/Freshwater_Ecoregions.
   dplyr::mutate_at(c("ECOREGION", "MHT_TXT"), as.factor) %>% 
   plyr::rename( c("MHT_TXT" = "biome", "ECOREGION"= "ecoregion")) #Change the name to combine with terrestrial
   #the Major Habitat Type (MHT) are similar to biome, but not reviewed entirely for the moment
-
 
 #Associate freshwater ecoregions to lake
 lake <- terrestrial %>% 
@@ -162,6 +163,7 @@ sf::write_sf(coastal, "data/shapefiles/ecoregions/coastal_ecoregions.shp")
 #!!! I define the alternative option, because my computer can't run all the geoprocessing step in R !!!
 #1. Remove terrestrial region of marine ecoregion (QGIS tool: Difference (with terrestrial ecoregions boundaries))
 #2. Remove coastal region of marine ecoregion (QGIS tool: Difference (with coastal ecoregions boundaries))
+#3. Correct invalid geometry (Fix Geometry)
 marine <- sf::st_read("data/shapefiles/ecoregions/marine_ecoregions_pre_process.shp") %>% 
   plyr::rename(c("REALM" = "realm", "ECOREGION" = "ecoregion", "PROVINCE"= "province")) %>% 
 dplyr::mutate(eco_type = "marine") %>% 
