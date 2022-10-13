@@ -18,30 +18,27 @@
 # - data/metadata/ecoregion_type.csv
 
 
-
-
 #------------------#
 #### Librairies ####
 #------------------#
 library(sf)
-sf::sf_use_s2(FALSE)
-###!!! Message " although coordinates are longitude/latitude, st_intersection assumes that they are planar"
-#   https://gis.stackexchange.com/questions/381446/choosing-projection-for-running-polygon-intersections-at-global-scale-i-e-geod
+sf::sf_use_s2(FALSE) # for the moment using s2 cause invalid geometries, but with the further development of the s2 package, considering turning s2 on to more accurate geocomputation
 library(dplyr)
 library(plyr)
 
-#--------------------------------------#
-#### Read the Ecoregions shapefiles ####
-#--------------------------------------#
-#----------- Terrestrial Ecoregions of the World
-#Download link: https://www.worldwildlife.org/publications/terrestrial-ecoregions-of-the-world
+
+#-------------------------------------------#
+#### Terrestrial Ecoregions of the World ####
+#-------------------------------------------#
+#Download Terrestrial Ecoregions: https://www.worldwildlife.org/publications/terrestrial-ecoregions-of-the-world
 #Import raw data
 terrestrial <- sf::st_read("data/shapefiles/raw/ecoregions/wwf_terr_ecos.shp") %>% 
-  sf::st_make_valid() %>%  #Correct invalid geometries 
-  dplyr::mutate_at(c("ECO_NAME", "REALM", "BIOME"), as.factor) #Change some variable to factor
+  sf::st_make_valid() %>%  # Make sure there is no invalid geometries
+  dplyr::mutate_at(c("ECO_NAME", "REALM", "BIOME"), as.factor) #Change some variables to factor
 
-#The Lake ecoregions are not defined as regional ecoregions, so we will use the freshwater ecoregions of the globe to associated ecoregions to large lakes
-#Download link:https://geospatial.tnc.org/datasets/38da4656e8074e1c820c42cc21cd76cd_0/explore?location=-0.867642%2C0.000000%2C2.20&showTable=true
+# ! The Lake ecoregions are not defined as specific ecoregions, so we will use the freshwater ecoregions of the globe to associated specific ecoregions to large lakes !
+
+#Download Freshwater Ecoregions :https://geospatial.tnc.org/datasets/38da4656e8074e1c820c42cc21cd76cd_0/explore?location=-0.867642%2C0.000000%2C2.20&showTable=true
 freshwater <- sf::st_read("data/shapefiles/raw/ecoregions/Freshwater_Ecoregions.shp") %>% 
   sf::st_transform(4326) %>% 
   sf::st_make_valid() %>% 
@@ -95,8 +92,9 @@ terrestrial <- terrestrial %>%
 #Export  shapefile
 sf::write_sf(terrestrial, "data/shapefiles/ecoregions/terrestrial_ecoregions.shp")
 
-
-#------Coastal Ecoregions of the World
+#----------------------------------------#
+#### Coastal Ecoregions of the World #####
+#----------------------------------------#
 #!!! Steps precedently done in QGIS because computer performance is not enough with R !!!
 # 1.Dissolve terrestrial ecoregions to resolved boundaries (Tool: Dissolve)
 # 2.Group into a single object (QGIS tool: Multipart to singlepart)

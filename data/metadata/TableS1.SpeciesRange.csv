@@ -62,7 +62,7 @@ Shorebirds,"Bairds Sandpiper
 Shorebirds,"Pectoral Sandpiper
 (Calidris melanotos)",Migrant,eBird,Ebird range falls inside the boundary of the Birdlife range
 Ducks and Loons,"King Eider
-(Somateria spectabilis)",Migrant,Birdlife,Species found mostly in marine habitats during non-breeding
+(Somateria spectabilis)",Migrant,Tracking,"Gilchrist, G., Mosbech, A., and Sonne, C. (2004). Data available on movebank.org, study name “Common/King Eiders; East Bay Island, Nunavut; Gilchrist/Mosbech/Sonne 2001 and 2003”, study ID 43747715). "
 Ducks and Loons,"Long-tailed Duck
 (Clangula hyemalis)",Migrant,Birdlife,Species found mostly in marine habitats during non-breeding
 Ducks and Loons,"Pacific Loon
@@ -78,7 +78,7 @@ Jaegers,"Long-tailed Jaeger
 Jaegers,"Parasitic Jaeger
 (Stercorarius parasiticus)",Migrant,Birdlife,Species found mostly in marine habitats during non-breeding
 Gulls,"Glaucous Gull
-(Larus hyperboreus)",Migrant,Birdlife,eBird occurence model lack northern observations
+(Larus hyperboreus)",Migrant,Birdlife,Species found mostly in marine habitats during non-breeding
 Ravens,"Common Raven
 (Corvus corax)",Partial migrant,100 km buffer,"Approximate distance from the nearest landfill: Temple, S. A. (1974). Winter food habits of ravens on the Arctic Slope of Alaska. Arctic 27 41-46. https://doi.org/10.14430/arctic2851 "
 Raptors,"Peregrine Falcon

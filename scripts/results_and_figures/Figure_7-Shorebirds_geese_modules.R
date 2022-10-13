@@ -8,25 +8,21 @@
 #------------------#
 library(dplyr)
 library(sf)
+sf::sf_use_s2(FALSE)
 library(ggplot2)
 library(rnaturalearth)
 library(rnaturalearthdata)
+source("scripts/functions/1_functions_data_manip.R")
 
 
 #-------------------#
 #### Import data ####
 #-------------------#
 #---- Shapefiles
-#Non-breeding range of Bylot Species
-non_breeding_range <- sf::read_sf("data/shapefiles/non_breeding_range.shp")
 #Ecoregions of the World
 ecoregion <- sf::read_sf("data/shapefiles/ecoregions/ecoregions.shp")
 #Land basemap
 world <- rnaturalearth::ne_countries(scale = "medium", returnclass = "sf")
-
-#Data frame
-#List of species and ecoregions modules
-node_module_list <- read.csv("data/modules/NodeModulesList.csv")
 
 #Incidence matrix Species-Ecoregions
 optimal_eco <- csv_to_eco_sp_matrix("data/adjency_matrix/optimal_eco.csv") %>%
@@ -46,7 +42,8 @@ coastal_shorebirds_eco <- which(colSums(coastal_shorebirds_eco) >0) %>%
   as.data.frame() %>%
   row.names()
 
-coastal_shorebirds_eco <- ecoregion[which(ecoregion$ecoregion %in% coastal_shorebirds_eco),] %>% 
+coastal_shorebirds_eco <- ecoregion %>% 
+  dplyr::filter(ecoregion %in% coastal_shorebirds_eco) %>% 
   dplyr::group_by(ecoregion) %>% 
   dplyr::summarise()
 
@@ -60,7 +57,7 @@ terrestrial_shorebirds_eco <- ecoregion[which(ecoregion$ecoregion %in% terrestri
   dplyr::group_by(ecoregion) %>% 
   dplyr::summarise()
 
-#Common-ringed Plover Ecoregions
+#Common-ringed Plover 
 crpl_eco <- which(optimal_eco[row.names(optimal_eco) == "Common-ringed Plover",] ==1) %>%
   as.data.frame() %>%
   row.names()
@@ -69,7 +66,7 @@ crpl_eco <- ecoregion[which(ecoregion$ecoregion %in% crpl_eco),] %>%
   dplyr::group_by(ecoregion) %>% 
   dplyr::summarise()
 
-#Red Phalarope Ecoregions
+#Red Phalarope
 reph_eco <- which(optimal_eco[row.names(optimal_eco) == "Red Phalarope",] ==1) %>%
   as.data.frame() %>%
   row.names()
@@ -84,8 +81,9 @@ reph_eco <- ecoregion[which(ecoregion$ecoregion %in% reph_eco),] %>%
 world <- rnaturalearth::ne_countries(scale = "medium", returnclass = "sf")
 
 #map
-svg("article/figures/Figure_7-Shorebirds_geese_modules/Snow_goose_ecoreigons.svg", #file name
+svg("figures/Figure_7-Shorebirds_geese_modules/sngo_eco.svg", #file name
     bg = "transparent") 
+
 ggplot() + 
   #Land filling color
   geom_sf(data= world[world$sovereignt == "United States of America",],
@@ -112,7 +110,7 @@ dev.off()
 
 
 #----Red Phalarope
-svg("article/figures/Figure_7-Shorebirds_geese_modules/Red_phalarope_ecoregions.svg", #file name
+svg("figures/Figure_7-Shorebirds_geese_modules/reph_eco.svg", #file name
     bg = "transparent") 
 ggplot() + 
   #Land filling color
@@ -138,35 +136,35 @@ ggplot() +
   coord_sf( xlim= c(-31, 50),ylim = c(-35, 40))
 dev.off()
 
-  #----Common-ringed Plover
-  svg("article/figures/Figure_7-Shorebirds_geese_modules/Common-ringed_plover_ecoregions.svg", #file name
-      bg = "transparent") 
-  ggplot() + 
-    #Land filling color
-    geom_sf(data= world,
-            fill= "#000000", 
-            cex= 0,
-            alpha= 1) + 
-    #Common-ringed plover ecoregions
-    geom_sf(data= crpl_eco,
-            alpha=1,
-            fill= "#fa8535ff",
-            color= "#343a40",
-            cex= 0.5) +
-    #Esthetic options
-    theme(panel.grid.major = element_blank(), #Theme settings
-          panel.grid.minor = element_blank(),
-          axis.text = element_blank(),
-          axis.ticks = element_blank(),
-          plot.title = element_text(size = 22, face = "bold"),
-          legend.title=element_blank(),
-          panel.background = element_rect(fill = "transparent"))+
-    #Crop map
-    coord_sf( xlim= c(-25, 50),ylim = c(-35, 36))
-  dev.off()
+#----Common-ringed plover
+svg("figures/Figure_7-Shorebirds_geese_modules/crpl_eco.svg", #file name
+    bg = "transparent") 
+ggplot() + 
+  #Land filling color
+  geom_sf(data= world,
+          fill= "#000000", 
+          cex= 0,
+          alpha= 1) + 
+  #Red Phalarope ecoregions
+  geom_sf(data= crpl_eco,
+          alpha=1,
+          fill= "#fa8535ff",
+          color= "#343a40",
+          cex= 0.5) +
+  #Esthetic options
+  theme(panel.grid.major = element_blank(), #Theme settings
+        panel.grid.minor = element_blank(),
+        axis.text = element_blank(),
+        axis.ticks = element_blank(),
+        plot.title = element_text(size = 22, face = "bold"),
+        legend.title=element_blank(),
+        panel.background = element_rect(fill = "transparent"))+
+  #Crop map
+  coord_sf( xlim= c(-31, 50),ylim = c(-35, 40))
+dev.off()
   
   #----Terrestrial Shorebird
-  svg("article/figures/Figure_7-Shorebirds_geese_modules/Terrestrial_Shorebird.svg", #file name
+  svg("figures/Figure_7-Shorebirds_geese_modules/terrestrial_shorebirds.svg", #file name
       bg = "transparent") 
   ggplot() + 
     #Land filling color
@@ -192,8 +190,8 @@ dev.off()
     coord_sf( xlim= c(-100, -35),ylim = c(10, -55))
   dev.off()
   
-  #----Coastal Shorebird
-  svg("article/figures/Figure_7-Shorebirds_geese_modules/Coastal_Shorebird.svg", #file name
+#----Coastal Shorebird
+  svg("figures/Figure_7-Shorebirds_geese_modules/coastal_shorebirds.svg", #file name
       bg = "transparent")
   ggplot() + 
     #Land filling color

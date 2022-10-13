@@ -6,7 +6,7 @@
    version="1.1"
    id="svg4083"
    sodipodi:docname="FoodWeb.svg"
-   inkscape:version="1.2.1 (2ed6d7ae0b, 2022-08-22, custom)"
+   inkscape:version="1.2.1 (0f2f062aeb, 2022-09-21, custom)"
    inkscape:export-filename="../aed193c1/Figure1.png"
    inkscape:export-xdpi="300"
    inkscape:export-ydpi="300"
@@ -29,11 +29,11 @@
      inkscape:guide-bbox="true"
      width="450pt"
      height="510pt"
-     inkscape:zoom="1.0000001"
-     inkscape:cx="756.99996"
-     inkscape:cy="206.49999"
+     inkscape:zoom="0.70710685"
+     inkscape:cx="-592.55542"
+     inkscape:cy="219.91019"
      inkscape:window-width="1920"
-     inkscape:window-height="923"
+     inkscape:window-height="1043"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -3384,7 +3384,7 @@
          id="tspan4766-3-1-0"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.19632"
          x="157.08784"
-         y="55.493893">Cranes</tspan></text>
+         y="55.493893">cranes</tspan></text>
   </g>
   <g
      id="g217744"
@@ -3410,7 +3410,7 @@
                  id="tspan4766-3-1-6"
                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.19632"
                  x="141.84363"
-                 y="106.00438">Jaegers</tspan></text>
+                 y="106.00438">jaegers</tspan></text>
             <g
                id="g217733"
                transform="matrix(2.0594046,0,0,2.0594046,-220.68979,1.2347619)"
@@ -3479,7 +3479,7 @@
              id="tspan4766-3-1"
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.19632"
              x="134.45859"
-             y="70.221748">Gulls</tspan></text>
+             y="70.221748">gulls</tspan></text>
         <g
            id="g26557"
            transform="matrix(2.6593105,0,0,2.6593105,-95.021693,0.35369925)"
@@ -3658,7 +3658,7 @@
            id="tspan4766-9-6"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.207427"
            x="146.20821"
-           y="167.08104">Shorebirds</tspan></text>
+           y="167.08104">shorebirds</tspan></text>
     </g>
   </g>
   <image
@@ -3693,7 +3693,7 @@
        id="tspan4766-9-6-9-0"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.08708px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.215266"
        x="166.13374"
-       y="212.24739">Lemmings</tspan><tspan
+       y="212.24739">lemmings</tspan><tspan
        sodipodi:role="line"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.15726px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.215266"
        x="166.13374"
@@ -3754,7 +3754,7 @@
        id="tspan4766-9-6-9-0-9"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.08708px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.215266"
        x="88.161224"
-       y="212.46396">Geese and Swans</tspan><tspan
+       y="212.46396">geese and swans</tspan><tspan
        sodipodi:role="line"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.15726px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.215266"
        x="88.161224"
@@ -3784,7 +3784,7 @@
          id="tspan4766-9-6-9-0-9-4-6"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.213204"
          x="29.24402"
-         y="174.15794">Hares</tspan><tspan
+         y="174.15794">hares</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.127px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.213204"
          x="29.24402"
@@ -3819,7 +3819,7 @@
                id="tspan4766-9-6-9-0-2"
                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.19632"
                x="69.123444"
-               y="113.22144">Ermines</tspan><tspan
+               y="113.22144">ermines</tspan><tspan
                sodipodi:role="line"
                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.87937px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.19632"
                x="69.123444"
@@ -3857,7 +3857,7 @@
            id="tspan60439"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.75"
            x="290.64993"
-           y="186.37273">Arthropods</tspan></text>
+           y="186.37273">arthropods</tspan></text>
       <g
          id="g220384"
          transform="matrix(1.3647663,0,0,1.3647663,8.150197,-68.566923)">
@@ -4021,7 +4021,7 @@
                id="tspan4766-3"
                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.96972px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.152033"
                x="59.028751"
-               y="41.095024">Raptors</tspan></text>
+               y="41.095024">raptors</tspan></text>
         </g>
       </g>
     </g>
@@ -4039,7 +4039,7 @@
          id="tspan4766-3-12"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.19632"
          x="89.969955"
-         y="56.996387">Foxes</tspan></text>
+         y="56.996387">foxes</tspan></text>
     <g
        id="g34269"
        transform="matrix(1.2946543,0,0,1.2946543,-22.226462,-6.3503812)">
@@ -4094,7 +4094,7 @@
                id="tspan4766-9-6-9-0-9-4"
                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.96972px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.165108"
                x="17.188528"
-               y="149.41399">Ptarmigans</tspan><tspan
+               y="149.41399">ptarmigans</tspan><tspan
                sodipodi:role="line"
                style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.42159px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.165108"
                x="17.188528"
@@ -4162,7 +4162,7 @@
          id="tspan4766-3-6-0"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.19632"
          x="247.03372"
-         y="57.230293">Ravens</tspan></text>
+         y="57.230293">ravens</tspan></text>
   </g>
   <path
      style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.344961px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -4190,7 +4190,7 @@
              id="tspan4766-9-6-9"
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.213204"
              x="143.7271"
-             y="136.66147">Passerines</tspan></text>
+             y="136.66147">passerines</tspan></text>
         <g
            id="g1709"
            style="fill:none;stroke:#9c1c28;stroke-width:1.02417;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
@@ -4295,12 +4295,12 @@
                  id="tspan4766-9"
                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.06034px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.190944"
                  x="158.4342"
-                 y="28.862381">Ducks and</tspan><tspan
+                 y="28.862381">ducks and</tspan><tspan
                  sodipodi:role="line"
                  style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.06034px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;stroke-width:0.190944"
                  x="158.4342"
                  y="37.325737"
-                 id="tspan87124"> Loons</tspan></text>
+                 id="tspan87124"> loons</tspan></text>
             <text
                xml:space="preserve"
                style="font-size:8.95592px;line-height:1.25;font-family:Roboto;-inkscape-font-specification:Roboto;letter-spacing:0px;word-spacing:0px;stroke-width:1.26552"
@@ -4402,7 +4402,7 @@
          id="tspan4766-9-6-9-0-9-4-6-7"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.213204"
          x="90.508049"
-         y="248.02763">Mosses</tspan><tspan
+         y="248.02763">mosses</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.127px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.213204"
          x="90.508049"
@@ -4433,7 +4433,7 @@
        id="tspan4766-9-6-9-0-9-4-6-7-6"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9.08708px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.215266"
        x="1.9309117"
-       y="306.51389">Sedges/Grasses</tspan><tspan
+       y="306.51389">sedges/grasses</tspan><tspan
        sodipodi:role="line"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.15727px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.215266"
        x="1.9309117"
@@ -4462,7 +4462,7 @@
          id="tspan4766-9-6-9-0-9-4-6-7-6-9"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.213204"
          x="174.83572"
-         y="283.21582">Shrubs</tspan><tspan
+         y="283.21582">shrubs</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Roboto;-inkscape-font-specification:'Roboto, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.213204"
          x="174.83572"
@@ -4497,7 +4497,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:9px;font-family:Roboto;-inkscape-font-specification:Roboto;stroke-width:0.213204"
          x="150.04346"
          y="242.03171"
-         id="tspan80178-3-8-7-5-2-6-8">Forbs</tspan></text>
+         id="tspan80178-3-8-7-5-2-6-8">forbs</tspan></text>
     <g
        id="g19214"
        transform="matrix(1.2805532,0,0,1.2805532,-38.97996,-39.077361)">

@@ -104,22 +104,19 @@ optimal_eco_modules_null <- run_infomap_monolayer(optimal_eco_net, infomap_execu
                                              shuff_method = "quasiswap",
                                              nsim=1000, 
                                              verbose = TRUE)
-#Extract list of ecoregions and species
-a <- plot_modular_matrix_modif(optimal_eco_modules, transpose = F, fix_coordinates = T, axes_titles=c('Migratory Species', 'Ecoregions'), outside_module_col='gray')
-#ecoregions
-eco_module_list <- data.frame(node_name= ggplot_build(a)$layout$panel_params[[1]]$x.sec$breaks)
-eco_module_list <- dplyr::left_join(eco_module_list, optimal_eco_modules$modules[c("node_name", "module_level1")], by= "node_name")
-eco_module_list$type <- "ecoregions"
-eco_module_list <- left_join(eco_module_list, eco_type, by = c("node_name" = "ecoregion"))
+
+#Extract list of Ecoregions and modules
+eco_module_list <- optimal_eco_modules$modules %>% 
+  dplyr::select(node_name, module_level1) %>%
+  dplyr::left_join(eco_type, by = c("node_name" = "ecoregion")) %>% 
+  na.omit() %>% 
+  dplyr::mutate(module= replace(module_level1, module_level1 ==6, 0)) %>% 
+  dplyr::mutate(module = factor(module, labels = c(1:length(unique(module)))))%>% 
+  dplyr::mutate(ecoregion = node_name) %>% 
+  dplyr::left_join(eco_type) %>% 
+  dplyr::select(ecoregion, eco_type, module) %>% 
+  dplyr::arrange(module, eco_type)  
 write.csv(eco_module_list, "data/modules/EcoregionsModulesList.csv")
-#species
-sp_module_list <- data.frame(node_name= ggplot_build(a)$layout$panel_params[[1]]$y.sec$breaks)
-sp_module_list <- dplyr::left_join(sp_module_list, optimal_eco_modules$modules[c("node_name", "module_level1")], by= "node_name")
-sp_module_list$type <- "species"
-write.csv(sp_module_list, "data/modules/SpeciesModulesList.csv")
-#combine ecoregions and species modules list
-node_module_list <- rbind(sp_module_list,eco_module_list)
-write.csv(node_module_list, "data/modules/NodeModulesList.csv")
 
 #Number of ecoregions in each modules
 optimal_eco_modules$modules %>%
@@ -179,3 +176,51 @@ plot_grid(
     abline(v=Tobs_eco_no_falcon, col="red", lwd=2)
   #p value
   sum(Tnulls_eco_no_falcon< Tobs_eco_no_falcon)/1000
+  
+  
+  
+  #----------------------------------------#
+  #### Histogram of degree distribution ####
+  #----------------------------------------#
+  #-----Ecoregions
+ svg("figures/Supplementary/Supplementary_Figure_4-Degree_Distribution/Degree_Distribution.svg", #file name
+      bg = "transparent" #background color
+  ) 
+  
+  
+  
+  eco_degree <- ggplot(aes(x=degree), data= data.frame(degree= as.numeric(ecoregion_degree))) +
+    geom_density(fill="#6c757d", color="#000000", alpha=0.4)+
+    scale_x_continuous(expand = c(0,0), limits=c(0, 15)) +
+    scale_y_continuous(expand = c(0, 0), n.breaks = 6)+ 
+    xlab("Degree of ecoregions")+
+    ylab("Density")+
+    theme_classic()+
+    theme(axis.text.x = element_text( color="#343a40", 
+                                      size=12),
+          axis.text.y = element_text( color="#343a40", 
+                                      size=12),
+          axis.title.y = element_text( color="#212529", 
+                                       size=12),
+          axis.title.x = element_text( color="#212529", 
+                                       size=12))
+  #Histogram of species degree
+  sp_degree <- ggplot(aes(x=degree), data= data.frame(degree= as.numeric(species_degree))) +
+    geom_density(fill="#343a40", color="#000000", alpha=0.8)+
+    scale_x_continuous(expand = c(0,0), limits=c(0, 300)) +
+    scale_y_continuous(expand = c(0, 0), limits=c(0, 0.025))+ 
+    xlab("Degree of species")+
+    ylab("")+
+    theme_classic()+
+    theme(axis.text.x = element_text(color="#343a40", 
+                                     size=12),
+          axis.text.y = element_text( color="#343a40", 
+                                      size=12),
+          axis.title.y = element_text(color="#212529", 
+                                      size=12),
+          axis.title.x = element_text(color="#212529", 
+                                      size=12))
+  
+  cowplot::plot_grid(eco_degree, sp_degree, labels = "AUTO")    
+  
+  dev.off()

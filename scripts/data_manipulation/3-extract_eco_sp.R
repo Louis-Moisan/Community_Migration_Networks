@@ -11,7 +11,7 @@
 #------------------#
 library(dplyr)
 library(sf)
-sf_use_s2(FALSE)
+sf::sf_use_s2(FALSE) # for the moment using s2 cause invalid geometries, but we the further developpment of the s2 package, considering turning s2 on to more accurate geocomputation
 library(plyr)
 source("scripts/functions/1_functions_data_manip.R")
 
@@ -81,6 +81,7 @@ extract_adjency_m(shp= "data/shapefiles/overlap_range_ecoregions/ebird_eco_fly.s
                   sp_flyway= sp_fly,
                   data= "ebird",
                   output_path= "data/adjency_matrix/")
+
 
 #Birdlife
 extract_adjency_m(shp= "data/shapefiles/overlap_range_ecoregions/birdlife_eco_fly.shp",
@@ -164,12 +165,10 @@ optimal_ebird_birdlife <-  ebird_birdlife_eco_hab_fly %>%
   dplyr::summarize()
 
 #---- Tracked species
-optimal_tracked_species <- sf::st_read("data/shapefiles/overlap_range_ecoregions/sp_track_eco_fly.shp") %>% 
-  dplyr::semi_join(sp_fly, by= c("species","flyway")) %>% #flyway filter
-  dplyr::semi_join(sp_eco_type, by= c("species","eco_type")) %>% #habitat filter
+optimal_tracked_species <- sf::st_read("data/shapefiles/overlap_range_ecoregions/sp_track_eco_fly.shp") %>% #habitat filter
+  dplyr::semi_join(sp_eco_type, by= c("species","eco_type")) %>% 
   dplyr::group_by(species, realm, province, ecoregion, eco_type) %>% 
   dplyr::summarize()
-
 
 #---- Combine all data source together
 partial_migrant_eco <- sf::st_read("data/shapefiles/overlap_range_ecoregions/partial_migrant_eco.shp")
@@ -188,7 +187,6 @@ optimal_eco_df <- optimal_eco %>%
   rbind(resident_eco) %>% 
   dplyr::select(species, ecoregion)
   
-
 #---Matrix
 optimal_eco <- table(unique(optimal_eco_df[, c("species", "ecoregion")]))
 #----- Export as .csv

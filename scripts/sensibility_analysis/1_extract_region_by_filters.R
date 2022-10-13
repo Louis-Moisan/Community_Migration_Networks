@@ -46,6 +46,7 @@ sp_fly <-  data.frame(Species = rep(sp_fly$Species, sapply(sp_fly_v, length)), F
 ebird_eco_list <- extract_nb_region_data(data= "ebird",
                        scale= "ecoregion",
                        scale_abbrev = "eco")
+
 #----- Birdlife
 #Ecoregion
 birdlife_eco_list <- extract_nb_region_data(data= "birdlife",

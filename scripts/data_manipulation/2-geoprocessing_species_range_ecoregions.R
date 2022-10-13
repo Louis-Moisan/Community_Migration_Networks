@@ -3,9 +3,7 @@
 #Creation date: May 2021
 #Review date: September 1st 2022
 
-sf_use_s2(FALSE)
-###!!! Message " although coordinates are longitude/latitude, st_intersection assumes that they are planar"
-#   https://gis.stackexchange.com/questions/381446/choosing-projection-for-running-polygon-intersections-at-global-scale-i-e-geod
+
 
 ##### INPUT FILES
 # - data/shapefiles/raw/flyways.shp
@@ -25,6 +23,7 @@ sf_use_s2(FALSE)
 #### Librairies ####
 #------------------#
 library(sf)
+sf::sf_use_s2(FALSE) # for the moment using s2 cause invalid geometries, but we the further developpment of the s2 package, considering turning s2 on to more accurate geocomputation
 library(dplyr)
 library(plyr)
 
@@ -72,7 +71,6 @@ ebird_birdlife <- ebird_birdlife %>%
 #export as .shp
 sf::st_write(ebird_birdlife, "data/shapefiles/ebird_birdlife.shp")
 
-
 #--------------------------------------------------#
 #### Overlap between non-breeding range maps, ecoregions and flyways ####
 #-------------------------------------------------#
@@ -104,6 +102,18 @@ sf::st_write(ebird_birdlife_eco_fly, "data/shapefiles/overlap_range_ecoregions/e
 #-----------------------#
 #### Tracked species ####
 #-----------------------#
+#
+#Read ecoregion type associated to each species
+sp_eco_type <-  read.csv("data/metadata/TableS3.SpeciesHabitat.csv")
+sp_eco_type_v <- strsplit(sp_eco_type$Habitat.type, split = "\n")
+sp_eco_type <-  data.frame(Species = rep(sp_eco_type$Species, sapply(sp_eco_type_v, length)), Habitat.type = unlist(sp_eco_type_v)) %>% 
+  plyr::rename( c("Species"= "species", "Habitat.type" = "eco_type")) %>% 
+  dplyr::mutate(eco_type= tolower(eco_type)) %>% 
+  dplyr::mutate_all(na_if,"") %>% 
+  na.omit() %>% 
+  dplyr::arrange(species, eco_type)
+
+#Species tracked directly from Bylot
 species_track_code <- data.frame(species= c("Common-ringed Plover", "Snowy Owl", "Long-tailed Jaeger", "American Golden-Plover", "Snow Goose"), code= c("crpl", "snow", "ltja", "amgp", "sngo"))
 species_track_range <- c() 
 
@@ -113,6 +123,7 @@ for (i in species_track_code$code){
     dplyr::mutate(species = species_track_code[which(species_track_code$code == i), ]$species)
   
   range_eco <- sf::st_intersection(range, ecoregion)%>% 
+    dplyr::semi_join(sp_eco_type) %>% 
   sf::st_collection_extract("POLYGON")
   sf::st_write(range_eco, paste("data/shapefiles/overlap_range_ecoregions/",i,"_winter_bylot_eco.shp", sep = ""))
   
@@ -123,8 +134,25 @@ for (i in species_track_code$code){
   species_track_range[[i]] <- range_eco_fly
 }
 
+#Add King Eider tracked from East Bay
+kiei_range <- sf::st_read("data/shapefiles/raw/range_maps/tracking/kiei_winter_east_bay.shp") %>%  
+  sf::st_make_valid() %>% 
+  dplyr::mutate(species = "King Eider")
+
+kiei_range_eco <- sf::st_intersection(kiei_range, ecoregion)%>%
+  dplyr::semi_join(sp_eco_type) %>% 
+  sf::st_collection_extract("POLYGON")
+sf::st_write(kiei_range_eco, "data/shapefiles/overlap_range_ecoregions/kiei_winter_east_bay_eco.shp")
+
+kiei_range_eco_fly <- sf::st_intersection(kiei_range_eco, flyway)%>% 
+  dplyr::select(species, ecoregion, province, realm, eco_type, flyway)
+sf::st_write(kiei_range_eco_fly, "data/shapefiles/overlap_range_ecoregions/kiei_winter_east_bay_eco_fly.shp")
+
+species_track_range[["kiei"]] <- kiei_range_eco_fly
+
+
 #--- Combine tracked species into a single shapefile
-sp_track_eco_fly <- rbind(species_track_range$crpl, species_track_range$snow, species_track_range$ltja, species_track_range$amgp, species_track_range$sngo)
+sp_track_eco_fly <- rbind(species_track_range$crpl, species_track_range$snow, species_track_range$ltja, species_track_range$amgp, species_track_range$sngo, species_track_range$kiei)
 sf::st_write(sp_track_eco_fly, "data/shapefiles/overlap_range_ecoregions/sp_track_eco_fly.shp")
 
 #----------------------------------------#
@@ -151,7 +179,9 @@ raven_eco$species <- "Common Raven"
 
 #---Combine all partial migrants
 partial_migrant_eco <- rbind(fox_eco, raven_eco)
-sf::st_write(partial_migrant_eco, "data/shapefiles/overlap_range_ecoregions/partial_migrant_eco.shp")
+#sf::st_write(partial_migrant_eco, "data/shapefiles/overlap_range_ecoregions/partial_migrant_eco.shp")
+
+
 
 #--------------------------------------------------------------#
 #### Overlap between tracked species and eBird and Birdlife ####
@@ -180,5 +210,4 @@ ebird_birdlife_track<- ebird_birdlife_track[as.character(ebird_birdlife_track$sp
   dplyr::select(species, ecoregion, province, realm, eco_type, flyway)
 #export as .shp
 sf::st_write(ebird_birdlife_track, "data/shapefiles/ebird_birdlife_track.shp")
-    
 

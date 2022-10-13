@@ -53,7 +53,7 @@ sngo_band_winter <- band_enc_bylot_100km %>%
 #Transform data frame into spatial points
 sngo_band_winter_sf <- sf::st_as_sf(x = sngo_band_winter, 
                         coords = c("lon", "lat"),
-                        crs = 4326) 
+                        crs = 4326)
 
 #---------------------------#
 #### Visualize locations ####
@@ -111,22 +111,28 @@ ecoregion <- sf::st_read("data/shapefiles/ecoregions/ecoregions.shp") #Read ecor
 
 sngo_tracking_winter_eco <- sf::st_read("data/shapefiles/overlap_range_ecoregions/sngo_winter_bylot_eco.shp") %>% 
   sf::st_drop_geometry() %>% 
+  dplyr::filter(eco_type != "marine")%>% 
   dplyr::select(ecoregion) %>% 
   unique()%>% 
   arrange(ecoregion)
 nrow(sngo_tracking_winter_eco)
 
-sf_use_s2(FALSE) #Turn off spherical geometry to perform geoprocessing
+sf::sf_use_s2(FALSE) # for the moment using s2 cause invalid geometries, but we the further developpment of the s2 package, considering turning s2 on to more accurate geocomputation
 sngo_banding_winter_eco <-  sf::st_intersection(winter.area.href, ecoregion) %>% 
   sf::st_drop_geometry() %>% 
+  dplyr::filter(eco_type != "marine")%>% 
   dplyr::select(ecoregion) %>% 
   unique() %>% 
   arrange(ecoregion)
 nrow(sngo_banding_winter_eco)
-  
+
+sngo_banding_winter_eco$ecoregion
+sngo_tracking_winter_eco$ecoregion  
+
 sngo_banding_winter_eco$ecoregion %in%
 sngo_tracking_winter_eco$ecoregion
 
 sngo_tracking_winter_eco$ecoregion%in%
   sngo_banding_winter_eco$ecoregion 
   
+

@@ -3,9 +3,7 @@
 #Creation Date: June 5 2021
 #Review date: September 2 2022
 
-sf_use_s2(FALSE)
-###!!! Message " although coordinates are longitude/latitude, st_intersection assumes that they are planar"
-#   https://gis.stackexchange.com/questions/381446/choosing-projection-for-running-polygon-intersections-at-global-scale-i-e-geod
+
 
 ##### INPUT FILES
 # - data/shapefiles/overlap_range_ecoregions/ebird_eco_fly.shp
@@ -29,6 +27,7 @@ sf_use_s2(FALSE)
 #------------------#
 library(dplyr)
 library(sf) 
+sf::sf_use_s2(FALSE) # for the moment using s2 cause invalid geometries, but we the further developpment of the s2 package, considering turning s2 on to more accurate geocomputation
 
 #-------------------#
 #### Import data ####
@@ -40,6 +39,7 @@ birdlife <- sf::st_read("data/shapefiles/overlap_range_ecoregions/birdlife_eco_f
 
 ebird_birdlife <- sf::st_read("data/shapefiles/overlap_range_ecoregions/ebird_birdlife_eco_fly.shp")
 
+#Species tracked from Bylot
 species_track_code <- data.frame(species= c("Common-ringed Plover", "Snowy Owl", "Long-tailed Jaeger", "American Golden-Plover", "Snow Goose"), code= c("crpl", "snow", "ltja", "amgp", "sngo"))
 
 species_tracked <- c()
@@ -53,6 +53,15 @@ for (i in species_track_code$code){
   
   species_tracked[[i]] <- sp
 }
+#Add King Eider tracked from East Bay
+kiei <- sf::st_read("data/shapefiles/overlap_range_ecoregions/kiei_winter_east_bay_eco.shp") %>%
+  dplyr::select(species, geometry)%>% 
+  dplyr::group_by(species) %>% 
+  dplyr::summarise()
+
+species_tracked[["kiei"]] <- kiei
+
+
 
 
 #--- Filters general species range by flyway

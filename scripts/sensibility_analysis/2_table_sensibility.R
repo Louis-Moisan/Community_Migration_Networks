@@ -52,7 +52,7 @@ species_eco_summary <- species_eco %>%
 species_eco_summary$label <- paste("n= ", species_eco_summary$n, sep= "")
 
 
-pdf("figures/Supplementary/Supplementary_Figure_3.pdf", #file name
+svg("figures/Supplementary/Supplementary_Figure_3-Filters_efficiency/Supplementary_Figure_3.svg", #file name
     bg = "white", #background color
     width= 7,
     height = 3.3) 

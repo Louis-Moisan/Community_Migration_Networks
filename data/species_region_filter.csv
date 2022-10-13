@@ -98,7 +98,7 @@ Snowy Owl,76,ebird,flyway and habitat
 Tundra Swan,23,ebird,flyway and habitat
 White-rumped Sandpiper,28,ebird,flyway and habitat
 American Golden-Plover,14,ebird,tracking
-Snow Goose,7,ebird,tracking
+Snow Goose,6,ebird,tracking
 Snowy Owl,23,ebird,tracking
 American Golden-Plover,19,birdlife,raw
 American Pipit,186,birdlife,raw
@@ -214,6 +214,7 @@ Tundra Swan,10,birdlife,flyway and habitat
 White-rumped Sandpiper,21,birdlife,flyway and habitat
 American Golden-Plover,13,birdlife,tracking
 Common-ringed Plover,13,birdlife,tracking
+King Eider,7,birdlife,tracking
 Long-tailed Jaeger,3,birdlife,tracking
 Snow Goose,6,birdlife,tracking
 Snowy Owl,19,birdlife,tracking
@@ -318,21 +319,25 @@ Snow Goose,6,ebird_birdlife,tracking
 Snowy Owl,11,ebird_birdlife,tracking
 American Golden-Plover,15,tracking,raw
 Common-ringed Plover,15,tracking,raw
-Long-tailed Jaeger,38,tracking,raw
-Snow Goose,7,tracking,raw
+King Eider,9,tracking,raw
+Long-tailed Jaeger,20,tracking,raw
+Snow Goose,6,tracking,raw
 Snowy Owl,36,tracking,raw
 American Golden-Plover,15,tracking,habitat
 Common-ringed Plover,15,tracking,habitat
+King Eider,9,tracking,habitat
 Long-tailed Jaeger,20,tracking,habitat
 Snow Goose,6,tracking,habitat
 Snowy Owl,36,tracking,habitat
 American Golden-Plover,15,tracking,flyway
 Common-ringed Plover,15,tracking,flyway
-Long-tailed Jaeger,37,tracking,flyway
-Snow Goose,7,tracking,flyway
+King Eider,9,tracking,flyway
+Long-tailed Jaeger,19,tracking,flyway
+Snow Goose,6,tracking,flyway
 Snowy Owl,36,tracking,flyway
 American Golden-Plover,15,tracking,flyway and habitat
 Common-ringed Plover,15,tracking,flyway and habitat
+King Eider,9,tracking,flyway and habitat
 Long-tailed Jaeger,19,tracking,flyway and habitat
 Snow Goose,6,tracking,flyway and habitat
 Snowy Owl,36,tracking,flyway and habitat

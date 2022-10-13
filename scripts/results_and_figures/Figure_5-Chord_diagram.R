@@ -77,7 +77,7 @@ marine_col <- rep("#023e8a", times=nrow(bipart_net_type[bipart_net_type$eco_type
 #species colors list
 sp_col <- left_join(data.frame(species= rownames(adjency_matrix)), 
                     sp_col, by = taxo_scale)
-
+sp_col
 #----- Assign a color for each node
 grid.col = NULL
 #terrestrial ecoregions colors
@@ -111,7 +111,7 @@ node_order <- as.matrix(rbind(species_order["node"], region_order["node"]))
                         rep("Resident", times= sum(species_order$non_breeding_strategy == "Resident"))),
                       names =c(bipart_net_type$ecoregion, species_order$node))
 
-
+node_order
 ####PLOT####
 chordDiagram_Network(export.pdf, #file_name
                      adjency_list = bipart_net_list, #adjency list

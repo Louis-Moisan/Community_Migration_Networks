@@ -18,9 +18,12 @@ source("scripts/functions/2_functions_net_viz.R") #function of data visualizatio
 #Ecoregions
 optimal_eco <- csv_to_eco_sp_matrix("data/adjency_matrix/optimal_eco.csv") %>%
   as.matrix()
+#Set species name to lower cases
+row.names(optimal_eco) <- tolower(row.names(optimal_eco))
 
 #### Meta-data
-sp_colors <- read.csv("data/metadata/species_colors.csv")
+sp_colors <- read.csv("data/metadata/species_colors.csv") %>% 
+  dplyr::mutate(species = tolower(species))
 
 #Create the network object
 optimal_eco_net <- infomapecology::create_monolayer_object(optimal_eco, bipartite = T, directed = F, group_names = c('Migratory species','Ecoregions'))
@@ -64,12 +67,15 @@ Set2_modules <- unique(M_set2[,c('Set2','module2')])
 Set2_modules <- with(Set2_modules, Set2_modules[order(module2,Set2),]) %>% 
   as.data.frame() %>% 
   dplyr::left_join(sp_colors, by= c("Set2" = "species")) %>% #Order species 
-  dplyr::arrange(module2,desc(non_breeding_strategy), trophic_level, sub_order) %>% dplyr::select(Set2, module2)
+  dplyr::arrange(desc(non_breeding_strategy),module2,trophic_level, sub_order) %>% dplyr::select(Set2, module2)
 
 M %<>% 
   dplyr::mutate(edge_in_out=ifelse(module1==module2,'in','out')) %>% # Determine if an interaction falls inside or outside a module
   dplyr::mutate(value_mod=ifelse(edge_in_out=='in',module1,0)) %>% # Assign a module value of 0 if interaction falls outside the modules
   dplyr::mutate(Set1=factor(Set1, levels=Set1_modules$Set1), Set2=factor(Set2, levels=rev(Set2_modules$Set2)))
+
+
+
 
 
 # Join the module colors to the edge list
@@ -100,7 +106,7 @@ M %<>%
   dplyr::mutate(col=ifelse(edge_in_out=='in',col,outside_module_col)) 
 
 #Add resident species
-resident_sp <- data_frame(Set1 = rep(NA, times= 5), Set2= c("Rock Ptarmigan", "Ermine", "Collared Lemming", "Brown Lemming", "Arctic Hare"), w= rep(0, times= 5), module1= rep(NA, times= 5), module2= rep(NA, times= 5), edge_in_out=rep(NA, times= 5), value_mod=rep(NA, times= 5), col= rep(NA, times= 5))
+resident_sp <- data_frame(Set1 = rep(NA, times= 5), Set2= c("rock ptarmigan", "ermine", "collared lemming", "brown lemming", "arctic hare"), w= rep(0, times= 5), module1= rep(NA, times= 5), module2= rep(NA, times= 5), edge_in_out=rep(NA, times= 5), value_mod=rep(NA, times= 5), col= rep(NA, times= 5))
 
 M <- rbind.data.frame(M, resident_sp)
 
@@ -113,23 +119,29 @@ y.lab.col <-  dplyr::left_join(data.frame(species= rev(levels(M$Set2))), sp_colo
 #---Define bounding boxes for each modules
 # y min and max values for each boxe
 y_coords_boxes <-  Set2_modules %>%
+  #Set partial migrant module to 0 so it appears first on the axis
+  dplyr::mutate(module2 = replace(module2, module2 == 6, 0)) %>% 
   dplyr::arrange(desc(module2)) %>% 
   dplyr::mutate(y_coords= 1:length(module2)) %>% 
   dplyr::group_by(module2) %>% 
   dplyr::summarise(min_y= min(y_coords), max_y= max(y_coords))
 
 x_coords_boxes <-  Set1_modules %>% 
+  dplyr::mutate(module1 = replace(module1, module1 == 6, 0)) %>% 
   dplyr::mutate(x_coords= 1:length(module1)) %>% 
   dplyr::group_by(module1) %>% 
   dplyr::summarise(min_x= min(x_coords), max_x= max(x_coords))
 
 boxes_coords <- dplyr::left_join(x_coords_boxes, y_coords_boxes, by= c("module1"= "module2")) %>% 
   dplyr::rename(module= module1)
+
+
 #Plot incidence matrix as heat map with species and rows order by modules
 svg("figures/Figure_6-Bylot_modularity/Figure6.svg", #file name
     width = (180/25.4), #enter in mm, 25.4 to convert from mmm to inch
     heigh= (120/25.4),
     bg = "white") #background color) 
+
 
 # Generate a plot of a modular matrix
 ggplot()+

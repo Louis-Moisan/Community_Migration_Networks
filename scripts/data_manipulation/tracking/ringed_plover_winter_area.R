@@ -137,9 +137,9 @@ ggplot2::ggplot(data = world) + #world map
 
 
 #---Remove marine part of the wintering range due to uncertainty of geoloc
-sf::sf_use_s2(FALSE)
+sf::sf_use_s2(FALSE) # for the moment using s2 cause invalid geometries, but we the further developpment of the s2 package, considering turning s2 on to more accurate geocomputation
 #Read marine ecoregions shapefile
-marine <- sf::st_read("data/shapefiles/ecoregions/marine_ecoregions.shp") %>% st_union()
+marine <- sf::st_read("data/shapefiles/ecoregions/marine_ecoregions.shp") %>% sf::st_union()
 #Crop
 winter.area.lscv.crop <- sf::st_difference(winter.area.lscv, marine)
 

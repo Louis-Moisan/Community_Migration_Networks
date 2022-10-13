@@ -44,8 +44,9 @@ extract_adjency_m <- function(shp,
   eco.f_fly_hab <- dplyr::semi_join(eco.f_fly, sp_habitat, by= c("species","eco_type")) %>% 
     dplyr::select(species, ecoregion, eco_type) %>% 
     unique()
+  
   #--- Filter by tracking devices
-  df_track <- sf::st_read(shp_track) %>% 
+  df_track <- sf::st_read(shp_track)%>% 
     sf::st_drop_geometry() %>% 
     dplyr::select(species, ecoregion) %>% 
     unique()

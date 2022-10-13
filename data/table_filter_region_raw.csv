@@ -87,169 +87,173 @@
 "86","King Eider","birdlife","habitat",41,43.8356164383562
 "87","King Eider","birdlife","flyway",23,68.4931506849315
 "88","King Eider","birdlife","flyway and habitat",16,78.0821917808219
-"89","King Eider","ebird","habitat",11,59.2592592592593
-"90","King Eider","ebird_birdlife","habitat",9,40
-"91","Lapland Longspur","birdlife","habitat",124,18.9542483660131
-"92","Lapland Longspur","birdlife","flyway",62,59.4771241830065
-"93","Lapland Longspur","birdlife","flyway and habitat",50,67.3202614379085
-"94","Lapland Longspur","ebird","flyway",68,9.33333333333334
-"95","Lapland Longspur","ebird","habitat",61,18.6666666666667
-"96","Lapland Longspur","ebird","flyway and habitat",57,24
-"97","Lapland Longspur","ebird_birdlife","flyway",52,1.88679245283019
-"98","Lapland Longspur","ebird_birdlife","habitat",46,13.2075471698113
-"99","Lapland Longspur","ebird_birdlife","flyway and habitat",45,15.0943396226415
-"100","Long-tailed Duck","birdlife","habitat",118,0
-"101","Long-tailed Duck","birdlife","flyway",37,68.6440677966102
-"102","Long-tailed Duck","birdlife","flyway and habitat",37,68.6440677966102
-"103","Long-tailed Duck","ebird","habitat",88,0
-"104","Long-tailed Duck","ebird","flyway",40,54.5454545454545
-"105","Long-tailed Duck","ebird","flyway and habitat",40,54.5454545454545
-"106","Long-tailed Duck","ebird_birdlife","habitat",40,0
-"107","Long-tailed Duck","ebird_birdlife","flyway",25,37.5
-"108","Long-tailed Duck","ebird_birdlife","flyway and habitat",25,37.5
-"109","Long-tailed Jaeger","birdlife","habitat",11,15.3846153846154
-"110","Long-tailed Jaeger","birdlife","flyway",8,38.4615384615385
-"111","Long-tailed Jaeger","birdlife","flyway and habitat",6,53.8461538461538
-"112","Long-tailed Jaeger","birdlife","tracking",3,76.9230769230769
-"113","Long-tailed Jaeger","tracking","flyway",37,2.63157894736842
-"114","Long-tailed Jaeger","tracking","habitat",20,47.3684210526316
-"115","Long-tailed Jaeger","tracking","flyway and habitat",19,50
-"116","Pacific Loon","birdlife","flyway",34,46.031746031746
-"117","Pacific Loon","birdlife","habitat",16,74.6031746031746
-"118","Pacific Loon","birdlife","flyway and habitat",8,87.3015873015873
-"119","Pacific Loon","ebird","flyway",41,26.7857142857143
-"120","Pacific Loon","ebird","habitat",10,82.1428571428571
-"121","Pacific Loon","ebird","flyway and habitat",8,85.7142857142857
-"122","Pacific Loon","ebird_birdlife","flyway",33,0
-"123","Pacific Loon","ebird_birdlife","habitat",8,75.7575757575758
-"124","Pacific Loon","ebird_birdlife","flyway and habitat",8,75.7575757575758
-"125","Parasitic Jaeger","birdlife","habitat",105,41.340782122905
-"126","Parasitic Jaeger","birdlife","flyway",57,68.1564245810056
-"127","Parasitic Jaeger","birdlife","flyway and habitat",34,81.0055865921788
-"128","Parasitic Jaeger","ebird","habitat",14,39.1304347826087
-"129","Parasitic Jaeger","ebird","flyway",11,52.1739130434783
-"130","Parasitic Jaeger","ebird","flyway and habitat",7,69.5652173913043
-"131","Parasitic Jaeger","ebird_birdlife","habitat",4,20
-"132","Pectoral Sandpiper","birdlife","habitat",60,36.1702127659574
-"133","Pectoral Sandpiper","birdlife","flyway",48,48.936170212766
-"134","Pectoral Sandpiper","birdlife","flyway and habitat",34,63.8297872340426
-"135","Pectoral Sandpiper","ebird","flyway",52,0
-"136","Pectoral Sandpiper","ebird","habitat",34,34.6153846153846
-"137","Pectoral Sandpiper","ebird","flyway and habitat",34,34.6153846153846
-"138","Pectoral Sandpiper","ebird_birdlife","flyway",39,0
-"139","Pectoral Sandpiper","ebird_birdlife","habitat",32,17.948717948718
-"140","Pectoral Sandpiper","ebird_birdlife","flyway and habitat",32,17.948717948718
-"141","Peregrine Falcon","birdlife","habitat",526,10.9983079526227
-"142","Peregrine Falcon","birdlife","flyway",226,61.7597292724196
-"143","Peregrine Falcon","birdlife","flyway and habitat",197,66.6666666666667
-"144","Peregrine Falcon","ebird","flyway",295,0
-"145","Peregrine Falcon","ebird","habitat",257,12.8813559322034
-"146","Peregrine Falcon","ebird","flyway and habitat",257,12.8813559322034
-"147","Peregrine Falcon","ebird_birdlife","flyway",178,0
-"148","Peregrine Falcon","ebird_birdlife","habitat",169,5.0561797752809
-"149","Peregrine Falcon","ebird_birdlife","flyway and habitat",169,5.0561797752809
-"150","Red Knot","birdlife","flyway",132,62.3931623931624
-"151","Red Knot","birdlife","habitat",95,72.9344729344729
-"152","Red Knot","birdlife","flyway and habitat",36,89.7435897435898
-"153","Red Knot","ebird","flyway",47,30.8823529411765
-"154","Red Knot","ebird","habitat",24,64.7058823529412
-"155","Red Knot","ebird","flyway and habitat",17,75
-"156","Red Knot","ebird_birdlife","flyway",36,21.7391304347826
-"157","Red Knot","ebird_birdlife","habitat",17,63.0434782608696
-"158","Red Knot","ebird_birdlife","flyway and habitat",14,69.5652173913043
-"159","Red Phalarope","birdlife","habitat",35,44.4444444444444
-"160","Red Phalarope","birdlife","flyway",12,80.9523809523809
-"161","Red Phalarope","birdlife","flyway and habitat",10,84.1269841269841
-"162","Red-throated Loon","birdlife","habitat",149,0
-"163","Red-throated Loon","birdlife","flyway",22,85.2348993288591
-"164","Red-throated Loon","birdlife","flyway and habitat",22,85.2348993288591
-"165","Red-throated Loon","ebird","habitat",74,0
-"166","Red-throated Loon","ebird","flyway",36,51.3513513513513
-"167","Red-throated Loon","ebird","flyway and habitat",36,51.3513513513513
-"168","Red-throated Loon","ebird_birdlife","habitat",37,0
-"169","Red-throated Loon","ebird_birdlife","flyway",15,59.4594594594595
-"170","Red-throated Loon","ebird_birdlife","flyway and habitat",15,59.4594594594595
-"171","Rough-legged Hawk","birdlife","habitat",202,9.82142857142857
-"172","Rough-legged Hawk","birdlife","flyway",83,62.9464285714286
-"173","Rough-legged Hawk","birdlife","flyway and habitat",76,66.0714285714286
-"174","Rough-legged Hawk","ebird","habitat",82,7.86516853932584
-"175","Rough-legged Hawk","ebird","flyway",80,10.1123595505618
-"176","Rough-legged Hawk","ebird","flyway and habitat",75,15.7303370786517
-"177","Rough-legged Hawk","ebird_birdlife","habitat",76,3.79746835443038
-"178","Rough-legged Hawk","ebird_birdlife","flyway",71,10.126582278481
-"179","Rough-legged Hawk","ebird_birdlife","flyway and habitat",69,12.6582278481013
-"180","Ruddy Turnstone","birdlife","flyway",176,74.2690058479532
-"181","Ruddy Turnstone","birdlife","habitat",174,74.5614035087719
-"182","Ruddy Turnstone","birdlife","flyway and habitat",45,93.4210526315789
-"183","Ruddy Turnstone","ebird","flyway",104,47.2081218274112
-"184","Ruddy Turnstone","ebird","habitat",49,75.1269035532995
-"185","Ruddy Turnstone","ebird","flyway and habitat",24,87.8172588832487
-"186","Ruddy Turnstone","ebird_birdlife","flyway",73,49.6551724137931
-"187","Ruddy Turnstone","ebird_birdlife","habitat",44,69.6551724137931
-"188","Ruddy Turnstone","ebird_birdlife","flyway and habitat",21,85.5172413793103
-"189","Sandhill Crane","birdlife","habitat",31,8.82352941176471
-"190","Sandhill Crane","birdlife","flyway",27,20.5882352941177
-"191","Sandhill Crane","birdlife","flyway and habitat",24,29.4117647058823
-"192","Sandhill Crane","ebird","habitat",65,7.14285714285714
-"193","Sandhill Crane","ebird","flyway",49,30
-"194","Sandhill Crane","ebird","flyway and habitat",45,35.7142857142857
-"195","Sandhill Crane","ebird_birdlife","habitat",25,3.84615384615384
-"196","Sandhill Crane","ebird_birdlife","flyway",23,11.5384615384615
-"197","Sandhill Crane","ebird_birdlife","flyway and habitat",22,15.3846153846154
-"198","Snow Bunting","birdlife","habitat",170,10.5263157894737
-"199","Snow Bunting","birdlife","flyway",90,52.6315789473684
-"200","Snow Bunting","birdlife","flyway and habitat",81,57.3684210526316
-"201","Snow Bunting","ebird","flyway",83,6.74157303370787
-"202","Snow Bunting","ebird","habitat",78,12.3595505617978
-"203","Snow Bunting","ebird","flyway and habitat",73,17.9775280898876
-"204","Snow Bunting","ebird_birdlife","flyway",75,6.25
-"205","Snow Bunting","ebird_birdlife","habitat",73,8.75
-"206","Snow Bunting","ebird_birdlife","flyway and habitat",69,13.75
-"207","Snow Goose","birdlife","habitat",68,9.33333333333334
-"208","Snow Goose","birdlife","flyway",19,74.6666666666667
-"209","Snow Goose","birdlife","flyway and habitat",16,78.6666666666667
-"210","Snow Goose","birdlife","tracking",6,92
-"211","Snow Goose","ebird","habitat",82,7.86516853932584
-"212","Snow Goose","ebird","flyway",28,68.5393258426966
-"213","Snow Goose","ebird","flyway and habitat",27,69.6629213483146
-"214","Snow Goose","ebird","tracking",7,92.1348314606742
-"215","Snow Goose","ebird_birdlife","habitat",44,4.34782608695652
-"216","Snow Goose","ebird_birdlife","flyway",15,67.3913043478261
-"217","Snow Goose","ebird_birdlife","flyway and habitat",14,69.5652173913043
-"218","Snow Goose","ebird_birdlife","tracking",6,86.9565217391304
-"219","Snow Goose","tracking","flyway",7,0
-"220","Snow Goose","tracking","habitat",6,14.2857142857143
-"221","Snow Goose","tracking","flyway and habitat",6,14.2857142857143
-"222","Snowy Owl","birdlife","habitat",167,0
-"223","Snowy Owl","birdlife","flyway",75,55.0898203592814
-"224","Snowy Owl","birdlife","flyway and habitat",75,55.0898203592814
-"225","Snowy Owl","birdlife","tracking",19,88.622754491018
-"226","Snowy Owl","ebird","habitat",82,0
-"227","Snowy Owl","ebird","flyway",76,7.3170731707317
-"228","Snowy Owl","ebird","flyway and habitat",76,7.3170731707317
-"229","Snowy Owl","ebird","tracking",23,71.9512195121951
-"230","Snowy Owl","ebird_birdlife","habitat",44,0
-"231","Snowy Owl","ebird_birdlife","flyway",44,0
-"232","Snowy Owl","ebird_birdlife","flyway and habitat",44,0
-"233","Snowy Owl","ebird_birdlife","tracking",11,75
-"234","Snowy Owl","tracking","habitat",36,0
-"235","Snowy Owl","tracking","flyway",36,0
-"236","Snowy Owl","tracking","flyway and habitat",36,0
-"237","Tundra Swan","birdlife","habitat",107,16.40625
-"238","Tundra Swan","birdlife","flyway",12,90.625
-"239","Tundra Swan","birdlife","flyway and habitat",10,92.1875
-"240","Tundra Swan","ebird","habitat",64,5.88235294117647
-"241","Tundra Swan","ebird","flyway",25,63.2352941176471
-"242","Tundra Swan","ebird","flyway and habitat",23,66.1764705882353
-"243","Tundra Swan","ebird_birdlife","habitat",30,3.2258064516129
-"244","Tundra Swan","ebird_birdlife","flyway",11,64.5161290322581
-"245","Tundra Swan","ebird_birdlife","flyway and habitat",10,67.741935483871
-"246","White-rumped Sandpiper","birdlife","flyway",27,0
-"247","White-rumped Sandpiper","birdlife","habitat",21,22.2222222222222
-"248","White-rumped Sandpiper","birdlife","flyway and habitat",21,22.2222222222222
-"249","White-rumped Sandpiper","ebird","flyway",37,0
-"250","White-rumped Sandpiper","ebird","habitat",28,24.3243243243243
-"251","White-rumped Sandpiper","ebird","flyway and habitat",28,24.3243243243243
-"252","White-rumped Sandpiper","ebird_birdlife","flyway",24,0
-"253","White-rumped Sandpiper","ebird_birdlife","habitat",20,16.6666666666667
-"254","White-rumped Sandpiper","ebird_birdlife","flyway and habitat",20,16.6666666666667
+"89","King Eider","birdlife","tracking",7,90.4109589041096
+"90","King Eider","ebird","habitat",11,59.2592592592593
+"91","King Eider","ebird_birdlife","habitat",9,40
+"92","King Eider","tracking","habitat",9,0
+"93","King Eider","tracking","flyway",9,0
+"94","King Eider","tracking","flyway and habitat",9,0
+"95","Lapland Longspur","birdlife","habitat",124,18.9542483660131
+"96","Lapland Longspur","birdlife","flyway",62,59.4771241830065
+"97","Lapland Longspur","birdlife","flyway and habitat",50,67.3202614379085
+"98","Lapland Longspur","ebird","flyway",68,9.33333333333334
+"99","Lapland Longspur","ebird","habitat",61,18.6666666666667
+"100","Lapland Longspur","ebird","flyway and habitat",57,24
+"101","Lapland Longspur","ebird_birdlife","flyway",52,1.88679245283019
+"102","Lapland Longspur","ebird_birdlife","habitat",46,13.2075471698113
+"103","Lapland Longspur","ebird_birdlife","flyway and habitat",45,15.0943396226415
+"104","Long-tailed Duck","birdlife","habitat",118,0
+"105","Long-tailed Duck","birdlife","flyway",37,68.6440677966102
+"106","Long-tailed Duck","birdlife","flyway and habitat",37,68.6440677966102
+"107","Long-tailed Duck","ebird","habitat",88,0
+"108","Long-tailed Duck","ebird","flyway",40,54.5454545454545
+"109","Long-tailed Duck","ebird","flyway and habitat",40,54.5454545454545
+"110","Long-tailed Duck","ebird_birdlife","habitat",40,0
+"111","Long-tailed Duck","ebird_birdlife","flyway",25,37.5
+"112","Long-tailed Duck","ebird_birdlife","flyway and habitat",25,37.5
+"113","Long-tailed Jaeger","birdlife","habitat",11,15.3846153846154
+"114","Long-tailed Jaeger","birdlife","flyway",8,38.4615384615385
+"115","Long-tailed Jaeger","birdlife","flyway and habitat",6,53.8461538461538
+"116","Long-tailed Jaeger","birdlife","tracking",3,76.9230769230769
+"117","Long-tailed Jaeger","tracking","habitat",20,0
+"118","Long-tailed Jaeger","tracking","flyway",19,5
+"119","Long-tailed Jaeger","tracking","flyway and habitat",19,5
+"120","Pacific Loon","birdlife","flyway",34,46.031746031746
+"121","Pacific Loon","birdlife","habitat",16,74.6031746031746
+"122","Pacific Loon","birdlife","flyway and habitat",8,87.3015873015873
+"123","Pacific Loon","ebird","flyway",41,26.7857142857143
+"124","Pacific Loon","ebird","habitat",10,82.1428571428571
+"125","Pacific Loon","ebird","flyway and habitat",8,85.7142857142857
+"126","Pacific Loon","ebird_birdlife","flyway",33,0
+"127","Pacific Loon","ebird_birdlife","habitat",8,75.7575757575758
+"128","Pacific Loon","ebird_birdlife","flyway and habitat",8,75.7575757575758
+"129","Parasitic Jaeger","birdlife","habitat",105,41.340782122905
+"130","Parasitic Jaeger","birdlife","flyway",57,68.1564245810056
+"131","Parasitic Jaeger","birdlife","flyway and habitat",34,81.0055865921788
+"132","Parasitic Jaeger","ebird","habitat",14,39.1304347826087
+"133","Parasitic Jaeger","ebird","flyway",11,52.1739130434783
+"134","Parasitic Jaeger","ebird","flyway and habitat",7,69.5652173913043
+"135","Parasitic Jaeger","ebird_birdlife","habitat",4,20
+"136","Pectoral Sandpiper","birdlife","habitat",60,36.1702127659574
+"137","Pectoral Sandpiper","birdlife","flyway",48,48.936170212766
+"138","Pectoral Sandpiper","birdlife","flyway and habitat",34,63.8297872340426
+"139","Pectoral Sandpiper","ebird","flyway",52,0
+"140","Pectoral Sandpiper","ebird","habitat",34,34.6153846153846
+"141","Pectoral Sandpiper","ebird","flyway and habitat",34,34.6153846153846
+"142","Pectoral Sandpiper","ebird_birdlife","flyway",39,0
+"143","Pectoral Sandpiper","ebird_birdlife","habitat",32,17.948717948718
+"144","Pectoral Sandpiper","ebird_birdlife","flyway and habitat",32,17.948717948718
+"145","Peregrine Falcon","birdlife","habitat",526,10.9983079526227
+"146","Peregrine Falcon","birdlife","flyway",226,61.7597292724196
+"147","Peregrine Falcon","birdlife","flyway and habitat",197,66.6666666666667
+"148","Peregrine Falcon","ebird","flyway",295,0
+"149","Peregrine Falcon","ebird","habitat",257,12.8813559322034
+"150","Peregrine Falcon","ebird","flyway and habitat",257,12.8813559322034
+"151","Peregrine Falcon","ebird_birdlife","flyway",178,0
+"152","Peregrine Falcon","ebird_birdlife","habitat",169,5.0561797752809
+"153","Peregrine Falcon","ebird_birdlife","flyway and habitat",169,5.0561797752809
+"154","Red Knot","birdlife","flyway",132,62.3931623931624
+"155","Red Knot","birdlife","habitat",95,72.9344729344729
+"156","Red Knot","birdlife","flyway and habitat",36,89.7435897435898
+"157","Red Knot","ebird","flyway",47,30.8823529411765
+"158","Red Knot","ebird","habitat",24,64.7058823529412
+"159","Red Knot","ebird","flyway and habitat",17,75
+"160","Red Knot","ebird_birdlife","flyway",36,21.7391304347826
+"161","Red Knot","ebird_birdlife","habitat",17,63.0434782608696
+"162","Red Knot","ebird_birdlife","flyway and habitat",14,69.5652173913043
+"163","Red Phalarope","birdlife","habitat",35,44.4444444444444
+"164","Red Phalarope","birdlife","flyway",12,80.9523809523809
+"165","Red Phalarope","birdlife","flyway and habitat",10,84.1269841269841
+"166","Red-throated Loon","birdlife","habitat",149,0
+"167","Red-throated Loon","birdlife","flyway",22,85.2348993288591
+"168","Red-throated Loon","birdlife","flyway and habitat",22,85.2348993288591
+"169","Red-throated Loon","ebird","habitat",74,0
+"170","Red-throated Loon","ebird","flyway",36,51.3513513513513
+"171","Red-throated Loon","ebird","flyway and habitat",36,51.3513513513513
+"172","Red-throated Loon","ebird_birdlife","habitat",37,0
+"173","Red-throated Loon","ebird_birdlife","flyway",15,59.4594594594595
+"174","Red-throated Loon","ebird_birdlife","flyway and habitat",15,59.4594594594595
+"175","Rough-legged Hawk","birdlife","habitat",202,9.82142857142857
+"176","Rough-legged Hawk","birdlife","flyway",83,62.9464285714286
+"177","Rough-legged Hawk","birdlife","flyway and habitat",76,66.0714285714286
+"178","Rough-legged Hawk","ebird","habitat",82,7.86516853932584
+"179","Rough-legged Hawk","ebird","flyway",80,10.1123595505618
+"180","Rough-legged Hawk","ebird","flyway and habitat",75,15.7303370786517
+"181","Rough-legged Hawk","ebird_birdlife","habitat",76,3.79746835443038
+"182","Rough-legged Hawk","ebird_birdlife","flyway",71,10.126582278481
+"183","Rough-legged Hawk","ebird_birdlife","flyway and habitat",69,12.6582278481013
+"184","Ruddy Turnstone","birdlife","flyway",176,74.2690058479532
+"185","Ruddy Turnstone","birdlife","habitat",174,74.5614035087719
+"186","Ruddy Turnstone","birdlife","flyway and habitat",45,93.4210526315789
+"187","Ruddy Turnstone","ebird","flyway",104,47.2081218274112
+"188","Ruddy Turnstone","ebird","habitat",49,75.1269035532995
+"189","Ruddy Turnstone","ebird","flyway and habitat",24,87.8172588832487
+"190","Ruddy Turnstone","ebird_birdlife","flyway",73,49.6551724137931
+"191","Ruddy Turnstone","ebird_birdlife","habitat",44,69.6551724137931
+"192","Ruddy Turnstone","ebird_birdlife","flyway and habitat",21,85.5172413793103
+"193","Sandhill Crane","birdlife","habitat",31,8.82352941176471
+"194","Sandhill Crane","birdlife","flyway",27,20.5882352941177
+"195","Sandhill Crane","birdlife","flyway and habitat",24,29.4117647058823
+"196","Sandhill Crane","ebird","habitat",65,7.14285714285714
+"197","Sandhill Crane","ebird","flyway",49,30
+"198","Sandhill Crane","ebird","flyway and habitat",45,35.7142857142857
+"199","Sandhill Crane","ebird_birdlife","habitat",25,3.84615384615384
+"200","Sandhill Crane","ebird_birdlife","flyway",23,11.5384615384615
+"201","Sandhill Crane","ebird_birdlife","flyway and habitat",22,15.3846153846154
+"202","Snow Bunting","birdlife","habitat",170,10.5263157894737
+"203","Snow Bunting","birdlife","flyway",90,52.6315789473684
+"204","Snow Bunting","birdlife","flyway and habitat",81,57.3684210526316
+"205","Snow Bunting","ebird","flyway",83,6.74157303370787
+"206","Snow Bunting","ebird","habitat",78,12.3595505617978
+"207","Snow Bunting","ebird","flyway and habitat",73,17.9775280898876
+"208","Snow Bunting","ebird_birdlife","flyway",75,6.25
+"209","Snow Bunting","ebird_birdlife","habitat",73,8.75
+"210","Snow Bunting","ebird_birdlife","flyway and habitat",69,13.75
+"211","Snow Goose","birdlife","habitat",68,9.33333333333334
+"212","Snow Goose","birdlife","flyway",19,74.6666666666667
+"213","Snow Goose","birdlife","flyway and habitat",16,78.6666666666667
+"214","Snow Goose","birdlife","tracking",6,92
+"215","Snow Goose","ebird","habitat",82,7.86516853932584
+"216","Snow Goose","ebird","flyway",28,68.5393258426966
+"217","Snow Goose","ebird","flyway and habitat",27,69.6629213483146
+"218","Snow Goose","ebird","tracking",6,93.2584269662921
+"219","Snow Goose","ebird_birdlife","habitat",44,4.34782608695652
+"220","Snow Goose","ebird_birdlife","flyway",15,67.3913043478261
+"221","Snow Goose","ebird_birdlife","flyway and habitat",14,69.5652173913043
+"222","Snow Goose","ebird_birdlife","tracking",6,86.9565217391304
+"223","Snow Goose","tracking","habitat",6,0
+"224","Snow Goose","tracking","flyway",6,0
+"225","Snow Goose","tracking","flyway and habitat",6,0
+"226","Snowy Owl","birdlife","habitat",167,0
+"227","Snowy Owl","birdlife","flyway",75,55.0898203592814
+"228","Snowy Owl","birdlife","flyway and habitat",75,55.0898203592814
+"229","Snowy Owl","birdlife","tracking",19,88.622754491018
+"230","Snowy Owl","ebird","habitat",82,0
+"231","Snowy Owl","ebird","flyway",76,7.3170731707317
+"232","Snowy Owl","ebird","flyway and habitat",76,7.3170731707317
+"233","Snowy Owl","ebird","tracking",23,71.9512195121951
+"234","Snowy Owl","ebird_birdlife","habitat",44,0
+"235","Snowy Owl","ebird_birdlife","flyway",44,0
+"236","Snowy Owl","ebird_birdlife","flyway and habitat",44,0
+"237","Snowy Owl","ebird_birdlife","tracking",11,75
+"238","Snowy Owl","tracking","habitat",36,0
+"239","Snowy Owl","tracking","flyway",36,0
+"240","Snowy Owl","tracking","flyway and habitat",36,0
+"241","Tundra Swan","birdlife","habitat",107,16.40625
+"242","Tundra Swan","birdlife","flyway",12,90.625
+"243","Tundra Swan","birdlife","flyway and habitat",10,92.1875
+"244","Tundra Swan","ebird","habitat",64,5.88235294117647
+"245","Tundra Swan","ebird","flyway",25,63.2352941176471
+"246","Tundra Swan","ebird","flyway and habitat",23,66.1764705882353
+"247","Tundra Swan","ebird_birdlife","habitat",30,3.2258064516129
+"248","Tundra Swan","ebird_birdlife","flyway",11,64.5161290322581
+"249","Tundra Swan","ebird_birdlife","flyway and habitat",10,67.741935483871
+"250","White-rumped Sandpiper","birdlife","flyway",27,0
+"251","White-rumped Sandpiper","birdlife","habitat",21,22.2222222222222
+"252","White-rumped Sandpiper","birdlife","flyway and habitat",21,22.2222222222222
+"253","White-rumped Sandpiper","ebird","flyway",37,0
+"254","White-rumped Sandpiper","ebird","habitat",28,24.3243243243243
+"255","White-rumped Sandpiper","ebird","flyway and habitat",28,24.3243243243243
+"256","White-rumped Sandpiper","ebird_birdlife","flyway",24,0
+"257","White-rumped Sandpiper","ebird_birdlife","habitat",20,16.6666666666667
+"258","White-rumped Sandpiper","ebird_birdlife","flyway and habitat",20,16.6666666666667

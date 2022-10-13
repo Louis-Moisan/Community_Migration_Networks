@@ -112,6 +112,15 @@ sp::proj4string(polygon.href) = CRS("+init=epsg:4326")
 #Transform back into sf object
 winter.area.href <- sf::st_as_sf(polygon.href)
 
+#---Remove marine part of the wintering range due to uncertainty tracking devices
+sf::sf_use_s2(FALSE) # for the moment using s2 cause invalid geometries, but we the further developpment of the s2 package, considering turning s2 on to more accurate geocomputation
+#Read marine ecoregions shapefile
+marine <- sf::st_read("data/shapefiles/ecoregions/marine_ecoregions.shp") %>% sf::st_union()
+#Crop
+winter.area.href <- sf::st_difference(winter.area.href, marine)
+
+
+#Plot the data on map
 ggplot2::ggplot(data = world) + #world map
   ggplot2::geom_sf(fill= "grey40", color= "grey45") + # world map color
   ggplot2::geom_sf(data= sngo_bylot_winter_sf, fill= "grey15", color= "orange", alpha= 0.8, cex= 0.35)+
@@ -138,4 +147,4 @@ sp::gridded(kernel.href.df) <- TRUE
 # coerce to raster
 kernel.raster <- raster::raster(kernel.href.df)
 #Export raster of kernel
-writeRaster(kernel.raster, filename = "data/tracking/snow_goose/sngo_non_breeding_kernel.tif")
+writeRaster(kernel.raster, filename = "data/tracking/snow_goose/sngo_non_breeding_kernel.tif", overwrite= T)
