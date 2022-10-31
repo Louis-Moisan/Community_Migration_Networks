@@ -18,5 +18,5 @@
 *.jpg
 Infomap
 data/shapefiles/
-data/tracking/snow_goose
+data/tracking/
 figures/
