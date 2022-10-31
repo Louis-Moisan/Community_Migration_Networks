@@ -147,7 +147,6 @@ winter.area.lscv.crop <- sf::st_difference(winter.area.lscv, marine)
 #Visualize the cropped polygon
 ggplot2::ggplot(data = world) + #world map
   ggplot2::geom_sf(fill= "grey40", color= "grey45") + # world map color
-  ggplot2::geom_sf(data= marine, fill= "red", alpha= 0.4)+
   ggplot2::geom_sf(data= winter.area.lscv.crop, fill= "steelblue4", color= "black", alpha= 0.4)+
   ggplot2::coord_sf(xlim = c(-35, 20), ylim = c(-15, 55))+ # set the map lat/lon limits
   ggplot2::xlab("Longitude") + 
